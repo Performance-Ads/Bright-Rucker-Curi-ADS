@@ -1,7 +1,7 @@
 {
   "surface": "dashboard",
   "title": "Rücker Curi · Bright Performance",
-  "generatedAt": "2026-10-07T04:35:44Z",
+  "generatedAt": "2026-10-07T09:10:04.307805+00:00",
   "buildStatus": "complete",
   "status": "reviewed",
   "filters": [
@@ -45,73 +45,25 @@
       "rows": [
         {
           "date": "2026-10-06",
-          "dateEnd": "2026-10-06",
-          "spend": 20.88,
-          "impressions": 750,
-          "reach": 621,
+          "dateStop": "2026-10-06",
+          "spend": 21.02,
+          "impressions": 754,
+          "reach": 624,
           "clicks": 8,
           "linkClicks": 5,
           "landingPageViews": 2,
-          "leads": null,
-          "rawActions": [
-            {
-              "action_type": "link_click",
-              "value": "5"
-            },
-            {
-              "action_type": "landing_page_view",
-              "value": "2"
-            },
-            {
-              "action_type": "omni_landing_page_view",
-              "value": "2"
-            },
-            {
-              "action_type": "post_engagement",
-              "value": "6"
-            },
-            {
-              "action_type": "post_interaction_gross",
-              "value": "1"
-            },
-            {
-              "action_type": "page_engagement",
-              "value": "6"
-            },
-            {
-              "action_type": "post_interaction_net",
-              "value": "1"
-            },
-            {
-              "action_type": "post",
-              "value": "1"
-            }
-          ]
+          "leads": null
         },
         {
           "date": "2026-10-07",
-          "dateEnd": "2026-10-07",
-          "spend": 0.03,
-          "impressions": 7,
-          "reach": 6,
-          "clicks": 1,
-          "linkClicks": 1,
-          "landingPageViews": null,
-          "leads": null,
-          "rawActions": [
-            {
-              "action_type": "link_click",
-              "value": "1"
-            },
-            {
-              "action_type": "post_engagement",
-              "value": "1"
-            },
-            {
-              "action_type": "page_engagement",
-              "value": "1"
-            }
-          ]
+          "dateStop": "2026-10-07",
+          "spend": 0.25,
+          "impressions": 37,
+          "reach": 28,
+          "clicks": 3,
+          "linkClicks": 3,
+          "landingPageViews": 1,
+          "leads": null
         }
       ],
       "source": {
@@ -121,7 +73,7 @@
         "grain": "conta × dia",
         "currency": "BRL",
         "timezone": "America/Sao_Paulo",
-        "executedAt": "2026-10-07T04:35:44Z",
+        "executedAt": "2026-10-07T09:10:04.307805+00:00",
         "coverage": {
           "start": "2026-10-06",
           "end": "2026-10-07"
@@ -155,42 +107,58 @@
         "evidenceFlow": [
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"account\",\"time_increment\":\"all_days\"},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"account\",\"time_increment\":1},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"account\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"campaign\",\"time_increment\":1},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"campaign\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"adset\",\"time_increment\":1},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"adset_id\",\"adset_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"adset\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"ad\",\"time_increment\":1},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"adset_id\",\"adset_name\",\"ad_id\",\"ad_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"ad\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"account\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"120252850906040704\",\"level\":\"campaign\",\"time_increment\":\"all_days\"},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"120252850906040704\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"campaign\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_OBJECT",
-            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252793713150704\",\"fields\":[\"id\",\"name\",\"status\",\"effective_status\",\"start_time\",\"stop_time\",\"lifetime_budget\",\"adsets.limit(100){id,name,status}\",\"ads.limit(100){id,name,status,adset_id}\"]},\"executedAt\":\"2026-10-07T04:35:11Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"id,name,currency,timezone_name,campaigns.limit(100){id,name,status,lifetime_budget,start_time,stop_time},ads.limit(100){id,name,campaign_id,adset_id,status,creative{id,image_url,thumbnail_url,object_story_spec}}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_OBJECT",
-            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252850906040704\",\"fields\":[\"id\",\"name\",\"status\",\"start_time\",\"stop_time\",\"lifetime_budget\",\"daily_budget\",\"adsets.limit(100){id,name,status,targeting,attribution_spec}\"]},\"executedAt\":\"2026-10-07T04:34:00Z\",\"timestampPrecision\":\"minute\"}"
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839134070704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_OBJECT",
-            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":[\"id\",\"name\",\"currency\",\"timezone_name\"]},\"executedAt\":\"2026-10-07T04:34:00Z\",\"timestampPrecision\":\"minute\"}"
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839135030704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839135900704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839137150704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839137960704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"id,adimages.limit(100){hash,name,url,width,height}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           }
         ],
-        "notes": "Dados de 07/10/2026 parciais; atualização sob demanda, sem conexão automática no navegador. Os relatórios por conta, campanha e anúncio apresentaram pequenas diferenças durante a extração. Preserve cada nível consultado; não ajuste artificialmente os resultados. O total da conta inclui a campanha arquivada “rascunho 1”. O orçamento de R$ 1.500 pertence apenas à campanha ativa. Nenhuma ação de lead de site foi reportada. Ausência de ação é mantida como null, sem afirmar que houve zero leads ou que o rastreamento foi validado. Alcance é deduplicado pela Meta e não deve ser somado entre datas, campanhas, públicos ou anúncios. Anúncios sem linha de insights no período têm deliveryStatus no_delivery e métricas ausentes, sem valores inventados. Metadados dos anúncios e do conjunto da campanha arquivada foram recuperados dos insights; seu status individual não está confirmado."
+        "notes": "Dados de 07/10/2026 parciais; atualização sob demanda, sem conexão automática no navegador. Os relatórios por conta, campanha e anúncio apresentaram pequenas diferenças durante a extração. Preserve cada nível consultado; não ajuste artificialmente os resultados. O total da conta inclui a campanha arquivada “rascunho 1”. O orçamento de R$ 1.500 pertence apenas à campanha ativa. Nenhuma ação de lead de site foi reportada. Ausência de ação é mantida como null, sem afirmar que houve zero leads ou que o rastreamento foi validado. Alcance é deduplicado pela Meta e não deve ser somado entre datas, campanhas, públicos ou anúncios. Anúncios sem linha de insights no período têm deliveryStatus no_delivery e métricas ausentes, sem valores inventados. Status dos anúncios arquivados confirmado na atualização; status do conjunto histórico permanece não confirmado. Imagens vinculadas pelo image_hash da Meta."
       },
       "methods": [
         {
@@ -202,76 +170,28 @@
     "meta_campaign_daily": {
       "rows": [
         {
-          "campaignId": "120252793713150704",
           "date": "2026-10-06",
-          "dateEnd": "2026-10-06",
-          "spend": 20.88,
-          "impressions": 750,
-          "reach": 621,
+          "dateStop": "2026-10-06",
+          "campaignId": "120252793713150704",
+          "spend": 21.02,
+          "impressions": 754,
+          "reach": 624,
           "clicks": 8,
           "linkClicks": 5,
           "landingPageViews": 2,
-          "leads": null,
-          "rawActions": [
-            {
-              "action_type": "link_click",
-              "value": "5"
-            },
-            {
-              "action_type": "landing_page_view",
-              "value": "2"
-            },
-            {
-              "action_type": "omni_landing_page_view",
-              "value": "2"
-            },
-            {
-              "action_type": "post_engagement",
-              "value": "6"
-            },
-            {
-              "action_type": "post_interaction_gross",
-              "value": "1"
-            },
-            {
-              "action_type": "page_engagement",
-              "value": "6"
-            },
-            {
-              "action_type": "post_interaction_net",
-              "value": "1"
-            },
-            {
-              "action_type": "post",
-              "value": "1"
-            }
-          ]
+          "leads": null
         },
         {
-          "campaignId": "120252850906040704",
           "date": "2026-10-07",
-          "dateEnd": "2026-10-07",
-          "spend": 0.05,
-          "impressions": 10,
-          "reach": 6,
-          "clicks": 1,
-          "linkClicks": 1,
-          "landingPageViews": null,
-          "leads": null,
-          "rawActions": [
-            {
-              "action_type": "link_click",
-              "value": "1"
-            },
-            {
-              "action_type": "post_engagement",
-              "value": "1"
-            },
-            {
-              "action_type": "page_engagement",
-              "value": "1"
-            }
-          ]
+          "dateStop": "2026-10-07",
+          "campaignId": "120252850906040704",
+          "spend": 0.25,
+          "impressions": 37,
+          "reach": 28,
+          "clicks": 3,
+          "linkClicks": 3,
+          "landingPageViews": 1,
+          "leads": null
         }
       ],
       "source": {
@@ -281,7 +201,7 @@
         "grain": "campanha × dia",
         "currency": "BRL",
         "timezone": "America/Sao_Paulo",
-        "executedAt": "2026-10-07T04:35:44Z",
+        "executedAt": "2026-10-07T09:10:04.307805+00:00",
         "coverage": {
           "start": "2026-10-06",
           "end": "2026-10-07"
@@ -315,42 +235,58 @@
         "evidenceFlow": [
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"account\",\"time_increment\":\"all_days\"},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"account\",\"time_increment\":1},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"account\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"campaign\",\"time_increment\":1},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"campaign\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"adset\",\"time_increment\":1},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"adset_id\",\"adset_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"adset\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"ad\",\"time_increment\":1},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"adset_id\",\"adset_name\",\"ad_id\",\"ad_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"ad\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"account\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"120252850906040704\",\"level\":\"campaign\",\"time_increment\":\"all_days\"},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"120252850906040704\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"campaign\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_OBJECT",
-            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252793713150704\",\"fields\":[\"id\",\"name\",\"status\",\"effective_status\",\"start_time\",\"stop_time\",\"lifetime_budget\",\"adsets.limit(100){id,name,status}\",\"ads.limit(100){id,name,status,adset_id}\"]},\"executedAt\":\"2026-10-07T04:35:11Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"id,name,currency,timezone_name,campaigns.limit(100){id,name,status,lifetime_budget,start_time,stop_time},ads.limit(100){id,name,campaign_id,adset_id,status,creative{id,image_url,thumbnail_url,object_story_spec}}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_OBJECT",
-            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252850906040704\",\"fields\":[\"id\",\"name\",\"status\",\"start_time\",\"stop_time\",\"lifetime_budget\",\"daily_budget\",\"adsets.limit(100){id,name,status,targeting,attribution_spec}\"]},\"executedAt\":\"2026-10-07T04:34:00Z\",\"timestampPrecision\":\"minute\"}"
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839134070704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_OBJECT",
-            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":[\"id\",\"name\",\"currency\",\"timezone_name\"]},\"executedAt\":\"2026-10-07T04:34:00Z\",\"timestampPrecision\":\"minute\"}"
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839135030704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839135900704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839137150704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839137960704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"id,adimages.limit(100){hash,name,url,width,height}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           }
         ],
-        "notes": "Dados de 07/10/2026 parciais; atualização sob demanda, sem conexão automática no navegador. Os relatórios por conta, campanha e anúncio apresentaram pequenas diferenças durante a extração. Preserve cada nível consultado; não ajuste artificialmente os resultados. O total da conta inclui a campanha arquivada “rascunho 1”. O orçamento de R$ 1.500 pertence apenas à campanha ativa. Nenhuma ação de lead de site foi reportada. Ausência de ação é mantida como null, sem afirmar que houve zero leads ou que o rastreamento foi validado. Alcance é deduplicado pela Meta e não deve ser somado entre datas, campanhas, públicos ou anúncios. Anúncios sem linha de insights no período têm deliveryStatus no_delivery e métricas ausentes, sem valores inventados. Metadados dos anúncios e do conjunto da campanha arquivada foram recuperados dos insights; seu status individual não está confirmado."
+        "notes": "Dados de 07/10/2026 parciais; atualização sob demanda, sem conexão automática no navegador. Os relatórios por conta, campanha e anúncio apresentaram pequenas diferenças durante a extração. Preserve cada nível consultado; não ajuste artificialmente os resultados. O total da conta inclui a campanha arquivada “rascunho 1”. O orçamento de R$ 1.500 pertence apenas à campanha ativa. Nenhuma ação de lead de site foi reportada. Ausência de ação é mantida como null, sem afirmar que houve zero leads ou que o rastreamento foi validado. Alcance é deduplicado pela Meta e não deve ser somado entre datas, campanhas, públicos ou anúncios. Anúncios sem linha de insights no período têm deliveryStatus no_delivery e métricas ausentes, sem valores inventados. Status dos anúncios arquivados confirmado na atualização; status do conjunto histórico permanece não confirmado. Imagens vinculadas pelo image_hash da Meta."
       },
       "methods": [
         {
@@ -362,106 +298,56 @@
     "meta_adset_daily": {
       "rows": [
         {
+          "date": "2026-10-06",
+          "dateStop": "2026-10-06",
           "campaignId": "120252793713150704",
           "adsetId": "120252799922750704",
-          "date": "2026-10-06",
-          "dateEnd": "2026-10-06",
-          "spend": 20.88,
-          "impressions": 750,
-          "reach": 621,
+          "spend": 21.02,
+          "impressions": 754,
+          "reach": 624,
           "clicks": 8,
           "linkClicks": 5,
           "landingPageViews": 2,
-          "leads": null,
-          "rawActions": [
-            {
-              "action_type": "link_click",
-              "value": "5"
-            },
-            {
-              "action_type": "landing_page_view",
-              "value": "2"
-            },
-            {
-              "action_type": "omni_landing_page_view",
-              "value": "2"
-            },
-            {
-              "action_type": "post_engagement",
-              "value": "6"
-            },
-            {
-              "action_type": "post_interaction_gross",
-              "value": "1"
-            },
-            {
-              "action_type": "page_engagement",
-              "value": "6"
-            },
-            {
-              "action_type": "post_interaction_net",
-              "value": "1"
-            },
-            {
-              "action_type": "post",
-              "value": "1"
-            }
-          ]
+          "leads": null
         },
         {
+          "date": "2026-10-07",
+          "dateStop": "2026-10-07",
           "campaignId": "120252850906040704",
           "adsetId": "120252850905890704",
-          "date": "2026-10-07",
-          "dateEnd": "2026-10-07",
-          "spend": 0.01,
-          "impressions": 1,
-          "reach": 1,
-          "clicks": 0,
-          "linkClicks": 0,
-          "landingPageViews": null,
-          "leads": null,
-          "rawActions": []
-        },
-        {
-          "campaignId": "120252850906040704",
-          "adsetId": "120252850905970704",
-          "date": "2026-10-07",
-          "dateEnd": "2026-10-07",
-          "spend": 0.01,
-          "impressions": 5,
-          "reach": 4,
+          "spend": 0.04,
+          "impressions": 4,
+          "reach": 3,
           "clicks": 1,
           "linkClicks": 1,
           "landingPageViews": null,
-          "leads": null,
-          "rawActions": [
-            {
-              "action_type": "link_click",
-              "value": "1"
-            },
-            {
-              "action_type": "post_engagement",
-              "value": "1"
-            },
-            {
-              "action_type": "page_engagement",
-              "value": "1"
-            }
-          ]
+          "leads": null
         },
         {
+          "date": "2026-10-07",
+          "dateStop": "2026-10-07",
+          "campaignId": "120252850906040704",
+          "adsetId": "120252850905970704",
+          "spend": 0.11,
+          "impressions": 18,
+          "reach": 13,
+          "clicks": 2,
+          "linkClicks": 2,
+          "landingPageViews": 1,
+          "leads": null
+        },
+        {
+          "date": "2026-10-07",
+          "dateStop": "2026-10-07",
           "campaignId": "120252850906040704",
           "adsetId": "120252850905990704",
-          "date": "2026-10-07",
-          "dateEnd": "2026-10-07",
-          "spend": 0.03,
-          "impressions": 4,
-          "reach": 1,
+          "spend": 0.1,
+          "impressions": 15,
+          "reach": 12,
           "clicks": 0,
           "linkClicks": 0,
           "landingPageViews": null,
-          "leads": null,
-          "rawActions": []
+          "leads": null
         }
       ],
       "source": {
@@ -471,7 +357,7 @@
         "grain": "conjunto × dia",
         "currency": "BRL",
         "timezone": "America/Sao_Paulo",
-        "executedAt": "2026-10-07T04:35:44Z",
+        "executedAt": "2026-10-07T09:10:04.307805+00:00",
         "coverage": {
           "start": "2026-10-06",
           "end": "2026-10-07"
@@ -505,42 +391,58 @@
         "evidenceFlow": [
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"account\",\"time_increment\":\"all_days\"},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"account\",\"time_increment\":1},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"account\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"campaign\",\"time_increment\":1},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"campaign\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"adset\",\"time_increment\":1},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"adset_id\",\"adset_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"adset\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"ad\",\"time_increment\":1},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"adset_id\",\"adset_name\",\"ad_id\",\"ad_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"ad\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"account\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"120252850906040704\",\"level\":\"campaign\",\"time_increment\":\"all_days\"},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"120252850906040704\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"campaign\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_OBJECT",
-            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252793713150704\",\"fields\":[\"id\",\"name\",\"status\",\"effective_status\",\"start_time\",\"stop_time\",\"lifetime_budget\",\"adsets.limit(100){id,name,status}\",\"ads.limit(100){id,name,status,adset_id}\"]},\"executedAt\":\"2026-10-07T04:35:11Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"id,name,currency,timezone_name,campaigns.limit(100){id,name,status,lifetime_budget,start_time,stop_time},ads.limit(100){id,name,campaign_id,adset_id,status,creative{id,image_url,thumbnail_url,object_story_spec}}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_OBJECT",
-            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252850906040704\",\"fields\":[\"id\",\"name\",\"status\",\"start_time\",\"stop_time\",\"lifetime_budget\",\"daily_budget\",\"adsets.limit(100){id,name,status,targeting,attribution_spec}\"]},\"executedAt\":\"2026-10-07T04:34:00Z\",\"timestampPrecision\":\"minute\"}"
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839134070704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_OBJECT",
-            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":[\"id\",\"name\",\"currency\",\"timezone_name\"]},\"executedAt\":\"2026-10-07T04:34:00Z\",\"timestampPrecision\":\"minute\"}"
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839135030704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839135900704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839137150704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839137960704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"id,adimages.limit(100){hash,name,url,width,height}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           }
         ],
-        "notes": "Dados de 07/10/2026 parciais; atualização sob demanda, sem conexão automática no navegador. Os relatórios por conta, campanha e anúncio apresentaram pequenas diferenças durante a extração. Preserve cada nível consultado; não ajuste artificialmente os resultados. O total da conta inclui a campanha arquivada “rascunho 1”. O orçamento de R$ 1.500 pertence apenas à campanha ativa. Nenhuma ação de lead de site foi reportada. Ausência de ação é mantida como null, sem afirmar que houve zero leads ou que o rastreamento foi validado. Alcance é deduplicado pela Meta e não deve ser somado entre datas, campanhas, públicos ou anúncios. Anúncios sem linha de insights no período têm deliveryStatus no_delivery e métricas ausentes, sem valores inventados. Metadados dos anúncios e do conjunto da campanha arquivada foram recuperados dos insights; seu status individual não está confirmado."
+        "notes": "Dados de 07/10/2026 parciais; atualização sob demanda, sem conexão automática no navegador. Os relatórios por conta, campanha e anúncio apresentaram pequenas diferenças durante a extração. Preserve cada nível consultado; não ajuste artificialmente os resultados. O total da conta inclui a campanha arquivada “rascunho 1”. O orçamento de R$ 1.500 pertence apenas à campanha ativa. Nenhuma ação de lead de site foi reportada. Ausência de ação é mantida como null, sem afirmar que houve zero leads ou que o rastreamento foi validado. Alcance é deduplicado pela Meta e não deve ser somado entre datas, campanhas, públicos ou anúncios. Anúncios sem linha de insights no período têm deliveryStatus no_delivery e métricas ausentes, sem valores inventados. Status dos anúncios arquivados confirmado na atualização; status do conjunto histórico permanece não confirmado. Imagens vinculadas pelo image_hash da Meta."
       },
       "methods": [
         {
@@ -552,221 +454,228 @@
     "meta_ad_daily": {
       "rows": [
         {
+          "date": "2026-10-06",
+          "dateStop": "2026-10-06",
           "campaignId": "120252793713150704",
           "adsetId": "120252799922750704",
           "adId": "120252839134070704",
-          "date": "2026-10-06",
-          "dateEnd": "2026-10-06",
-          "spend": 12.53,
-          "impressions": 363,
-          "reach": 312,
+          "spend": 12.54,
+          "impressions": 364,
+          "reach": 313,
           "clicks": 4,
           "linkClicks": 2,
           "landingPageViews": 1,
-          "leads": null,
-          "rawActions": [
-            {
-              "action_type": "link_click",
-              "value": "2"
-            },
-            {
-              "action_type": "landing_page_view",
-              "value": "1"
-            },
-            {
-              "action_type": "omni_landing_page_view",
-              "value": "1"
-            },
-            {
-              "action_type": "post_engagement",
-              "value": "3"
-            },
-            {
-              "action_type": "post_interaction_gross",
-              "value": "1"
-            },
-            {
-              "action_type": "page_engagement",
-              "value": "3"
-            },
-            {
-              "action_type": "post_interaction_net",
-              "value": "1"
-            },
-            {
-              "action_type": "post",
-              "value": "1"
-            }
-          ]
+          "leads": null
         },
         {
+          "date": "2026-10-06",
+          "dateStop": "2026-10-06",
           "campaignId": "120252793713150704",
           "adsetId": "120252799922750704",
           "adId": "120252839135030704",
-          "date": "2026-10-06",
-          "dateEnd": "2026-10-06",
           "spend": 0.04,
           "impressions": 2,
           "reach": 2,
           "clicks": 0,
           "linkClicks": 0,
           "landingPageViews": null,
-          "leads": null,
-          "rawActions": []
+          "leads": null
         },
         {
+          "date": "2026-10-06",
+          "dateStop": "2026-10-06",
           "campaignId": "120252793713150704",
           "adsetId": "120252799922750704",
           "adId": "120252839135900704",
-          "date": "2026-10-06",
-          "dateEnd": "2026-10-06",
           "spend": 2.44,
           "impressions": 151,
           "reach": 133,
           "clicks": 0,
           "linkClicks": 0,
           "landingPageViews": null,
-          "leads": null,
-          "rawActions": []
+          "leads": null
         },
         {
+          "date": "2026-10-06",
+          "dateStop": "2026-10-06",
           "campaignId": "120252793713150704",
           "adsetId": "120252799922750704",
           "adId": "120252839137150704",
-          "date": "2026-10-06",
-          "dateEnd": "2026-10-06",
           "spend": 0,
           "impressions": 1,
           "reach": 1,
           "clicks": 0,
           "linkClicks": 0,
           "landingPageViews": null,
-          "leads": null,
-          "rawActions": []
+          "leads": null
         },
         {
+          "date": "2026-10-06",
+          "dateStop": "2026-10-06",
           "campaignId": "120252793713150704",
           "adsetId": "120252799922750704",
           "adId": "120252839137960704",
-          "date": "2026-10-06",
-          "dateEnd": "2026-10-06",
-          "spend": 5.87,
-          "impressions": 233,
-          "reach": 216,
+          "spend": 6,
+          "impressions": 236,
+          "reach": 219,
           "clicks": 4,
           "linkClicks": 3,
           "landingPageViews": 1,
-          "leads": null,
-          "rawActions": [
-            {
-              "action_type": "link_click",
-              "value": "3"
-            },
-            {
-              "action_type": "landing_page_view",
-              "value": "1"
-            },
-            {
-              "action_type": "omni_landing_page_view",
-              "value": "1"
-            },
-            {
-              "action_type": "post_engagement",
-              "value": "3"
-            },
-            {
-              "action_type": "page_engagement",
-              "value": "3"
-            }
-          ]
+          "leads": null
         },
         {
+          "date": "2026-10-07",
+          "dateStop": "2026-10-07",
           "campaignId": "120252850906040704",
           "adsetId": "120252850905970704",
           "adId": "120252850905860704",
-          "date": "2026-10-07",
-          "dateEnd": "2026-10-07",
-          "spend": 0,
-          "impressions": 1,
-          "reach": 1,
-          "clicks": 0,
-          "linkClicks": 0,
-          "landingPageViews": null,
-          "leads": null,
-          "rawActions": []
-        },
-        {
-          "campaignId": "120252850906040704",
-          "adsetId": "120252850905990704",
-          "adId": "120252850905930704",
-          "date": "2026-10-07",
-          "dateEnd": "2026-10-07",
-          "spend": 0.01,
-          "impressions": 2,
-          "reach": 1,
-          "clicks": 0,
-          "linkClicks": 0,
-          "landingPageViews": null,
-          "leads": null,
-          "rawActions": []
-        },
-        {
-          "campaignId": "120252850906040704",
-          "adsetId": "120252850905890704",
-          "adId": "120252850905940704",
-          "date": "2026-10-07",
-          "dateEnd": "2026-10-07",
-          "spend": 0.01,
-          "impressions": 1,
-          "reach": 1,
-          "clicks": 0,
-          "linkClicks": 0,
-          "landingPageViews": null,
-          "leads": null,
-          "rawActions": []
-        },
-        {
-          "campaignId": "120252850906040704",
-          "adsetId": "120252850905970704",
-          "adId": "120252850905950704",
-          "date": "2026-10-07",
-          "dateEnd": "2026-10-07",
-          "spend": 0,
-          "impressions": 2,
-          "reach": 1,
+          "spend": 0.05,
+          "impressions": 10,
+          "reach": 9,
           "clicks": 1,
           "linkClicks": 1,
-          "landingPageViews": null,
-          "leads": null,
-          "rawActions": [
-            {
-              "action_type": "link_click",
-              "value": "1"
-            },
-            {
-              "action_type": "post_engagement",
-              "value": "1"
-            },
-            {
-              "action_type": "page_engagement",
-              "value": "1"
-            }
-          ]
+          "landingPageViews": 1,
+          "leads": null
         },
         {
-          "campaignId": "120252850906040704",
-          "adsetId": "120252850905970704",
-          "adId": "120252850905960704",
           "date": "2026-10-07",
-          "dateEnd": "2026-10-07",
+          "dateStop": "2026-10-07",
+          "campaignId": "120252850906040704",
+          "adsetId": "120252850905990704",
+          "adId": "120252850905870704",
           "spend": 0.01,
           "impressions": 2,
           "reach": 2,
           "clicks": 0,
           "linkClicks": 0,
           "landingPageViews": null,
-          "leads": null,
-          "rawActions": []
+          "leads": null
+        },
+        {
+          "date": "2026-10-07",
+          "dateStop": "2026-10-07",
+          "campaignId": "120252850906040704",
+          "adsetId": "120252850905990704",
+          "adId": "120252850905880704",
+          "spend": 0.04,
+          "impressions": 4,
+          "reach": 4,
+          "clicks": 0,
+          "linkClicks": 0,
+          "landingPageViews": null,
+          "leads": null
+        },
+        {
+          "date": "2026-10-07",
+          "dateStop": "2026-10-07",
+          "campaignId": "120252850906040704",
+          "adsetId": "120252850905890704",
+          "adId": "120252850905900704",
+          "spend": 0.03,
+          "impressions": 2,
+          "reach": 1,
+          "clicks": 1,
+          "linkClicks": 1,
+          "landingPageViews": null,
+          "leads": null
+        },
+        {
+          "date": "2026-10-07",
+          "dateStop": "2026-10-07",
+          "campaignId": "120252850906040704",
+          "adsetId": "120252850905890704",
+          "adId": "120252850905910704",
+          "spend": 0,
+          "impressions": 1,
+          "reach": 1,
+          "clicks": 0,
+          "linkClicks": 0,
+          "landingPageViews": null,
+          "leads": null
+        },
+        {
+          "date": "2026-10-07",
+          "dateStop": "2026-10-07",
+          "campaignId": "120252850906040704",
+          "adsetId": "120252850905990704",
+          "adId": "120252850905920704",
+          "spend": 0.04,
+          "impressions": 6,
+          "reach": 4,
+          "clicks": 0,
+          "linkClicks": 0,
+          "landingPageViews": null,
+          "leads": null
+        },
+        {
+          "date": "2026-10-07",
+          "dateStop": "2026-10-07",
+          "campaignId": "120252850906040704",
+          "adsetId": "120252850905990704",
+          "adId": "120252850905930704",
+          "spend": 0.01,
+          "impressions": 3,
+          "reach": 2,
+          "clicks": 0,
+          "linkClicks": 0,
+          "landingPageViews": null,
+          "leads": null
+        },
+        {
+          "date": "2026-10-07",
+          "dateStop": "2026-10-07",
+          "campaignId": "120252850906040704",
+          "adsetId": "120252850905890704",
+          "adId": "120252850905940704",
+          "spend": 0.01,
+          "impressions": 1,
+          "reach": 1,
+          "clicks": 0,
+          "linkClicks": 0,
+          "landingPageViews": null,
+          "leads": null
+        },
+        {
+          "date": "2026-10-07",
+          "dateStop": "2026-10-07",
+          "campaignId": "120252850906040704",
+          "adsetId": "120252850905970704",
+          "adId": "120252850905950704",
+          "spend": 0,
+          "impressions": 3,
+          "reach": 3,
+          "clicks": 1,
+          "linkClicks": 1,
+          "landingPageViews": null,
+          "leads": null
+        },
+        {
+          "date": "2026-10-07",
+          "dateStop": "2026-10-07",
+          "campaignId": "120252850906040704",
+          "adsetId": "120252850905970704",
+          "adId": "120252850905960704",
+          "spend": 0.01,
+          "impressions": 2,
+          "reach": 2,
+          "clicks": 0,
+          "linkClicks": 0,
+          "landingPageViews": null,
+          "leads": null
+        },
+        {
+          "date": "2026-10-07",
+          "dateStop": "2026-10-07",
+          "campaignId": "120252850906040704",
+          "adsetId": "120252850905970704",
+          "adId": "120252850906030704",
+          "spend": 0.05,
+          "impressions": 3,
+          "reach": 2,
+          "clicks": 0,
+          "linkClicks": 0,
+          "landingPageViews": null,
+          "leads": null
         }
       ],
       "source": {
@@ -776,7 +685,7 @@
         "grain": "anúncio × dia",
         "currency": "BRL",
         "timezone": "America/Sao_Paulo",
-        "executedAt": "2026-10-07T04:35:44Z",
+        "executedAt": "2026-10-07T09:10:04.307805+00:00",
         "coverage": {
           "start": "2026-10-06",
           "end": "2026-10-07"
@@ -810,42 +719,58 @@
         "evidenceFlow": [
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"account\",\"time_increment\":\"all_days\"},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"account\",\"time_increment\":1},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"account\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"campaign\",\"time_increment\":1},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"campaign\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"adset\",\"time_increment\":1},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"adset_id\",\"adset_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"adset\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"ad\",\"time_increment\":1},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"adset_id\",\"adset_name\",\"ad_id\",\"ad_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"ad\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"account\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"120252850906040704\",\"level\":\"campaign\",\"time_increment\":\"all_days\"},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"120252850906040704\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"campaign\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_OBJECT",
-            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252793713150704\",\"fields\":[\"id\",\"name\",\"status\",\"effective_status\",\"start_time\",\"stop_time\",\"lifetime_budget\",\"adsets.limit(100){id,name,status}\",\"ads.limit(100){id,name,status,adset_id}\"]},\"executedAt\":\"2026-10-07T04:35:11Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"id,name,currency,timezone_name,campaigns.limit(100){id,name,status,lifetime_budget,start_time,stop_time},ads.limit(100){id,name,campaign_id,adset_id,status,creative{id,image_url,thumbnail_url,object_story_spec}}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_OBJECT",
-            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252850906040704\",\"fields\":[\"id\",\"name\",\"status\",\"start_time\",\"stop_time\",\"lifetime_budget\",\"daily_budget\",\"adsets.limit(100){id,name,status,targeting,attribution_spec}\"]},\"executedAt\":\"2026-10-07T04:34:00Z\",\"timestampPrecision\":\"minute\"}"
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839134070704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_OBJECT",
-            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":[\"id\",\"name\",\"currency\",\"timezone_name\"]},\"executedAt\":\"2026-10-07T04:34:00Z\",\"timestampPrecision\":\"minute\"}"
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839135030704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839135900704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839137150704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839137960704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"id,adimages.limit(100){hash,name,url,width,height}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           }
         ],
-        "notes": "Dados de 07/10/2026 parciais; atualização sob demanda, sem conexão automática no navegador. Os relatórios por conta, campanha e anúncio apresentaram pequenas diferenças durante a extração. Preserve cada nível consultado; não ajuste artificialmente os resultados. O total da conta inclui a campanha arquivada “rascunho 1”. O orçamento de R$ 1.500 pertence apenas à campanha ativa. Nenhuma ação de lead de site foi reportada. Ausência de ação é mantida como null, sem afirmar que houve zero leads ou que o rastreamento foi validado. Alcance é deduplicado pela Meta e não deve ser somado entre datas, campanhas, públicos ou anúncios. Anúncios sem linha de insights no período têm deliveryStatus no_delivery e métricas ausentes, sem valores inventados. Metadados dos anúncios e do conjunto da campanha arquivada foram recuperados dos insights; seu status individual não está confirmado."
+        "notes": "Dados de 07/10/2026 parciais; atualização sob demanda, sem conexão automática no navegador. Os relatórios por conta, campanha e anúncio apresentaram pequenas diferenças durante a extração. Preserve cada nível consultado; não ajuste artificialmente os resultados. O total da conta inclui a campanha arquivada “rascunho 1”. O orçamento de R$ 1.500 pertence apenas à campanha ativa. Nenhuma ação de lead de site foi reportada. Ausência de ação é mantida como null, sem afirmar que houve zero leads ou que o rastreamento foi validado. Alcance é deduplicado pela Meta e não deve ser somado entre datas, campanhas, públicos ou anúncios. Anúncios sem linha de insights no período têm deliveryStatus no_delivery e métricas ausentes, sem valores inventados. Status dos anúncios arquivados confirmado na atualização; status do conjunto histórico permanece não confirmado. Imagens vinculadas pelo image_hash da Meta."
       },
       "methods": [
         {
@@ -858,29 +783,15 @@
       "rows": [
         {
           "date": "2026-10-06",
-          "dateEnd": "2026-10-07",
-          "spend": 0.05,
-          "impressions": 10,
-          "reach": 6,
-          "clicks": 1,
-          "linkClicks": 1,
-          "landingPageViews": null,
-          "leads": null,
-          "rawActions": [
-            {
-              "action_type": "link_click",
-              "value": "1"
-            },
-            {
-              "action_type": "post_engagement",
-              "value": "1"
-            },
-            {
-              "action_type": "page_engagement",
-              "value": "1"
-            }
-          ],
+          "dateStop": "2026-10-07",
           "campaignId": "120252850906040704",
+          "spend": 0.25,
+          "impressions": 37,
+          "reach": 28,
+          "clicks": 3,
+          "linkClicks": 3,
+          "landingPageViews": 1,
+          "leads": null,
           "budget": 1500,
           "startTime": "2026-10-06T23:51:56-0300",
           "endTime": "2026-11-06T22:51:56-0300"
@@ -893,7 +804,7 @@
         "grain": "campanha atual × período consultado",
         "currency": "BRL",
         "timezone": "America/Sao_Paulo",
-        "executedAt": "2026-10-07T04:35:44Z",
+        "executedAt": "2026-10-07T09:10:04.307805+00:00",
         "coverage": {
           "start": "2026-10-06",
           "end": "2026-10-07"
@@ -927,42 +838,58 @@
         "evidenceFlow": [
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"account\",\"time_increment\":\"all_days\"},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"account\",\"time_increment\":1},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"account\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"campaign\",\"time_increment\":1},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"campaign\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"adset\",\"time_increment\":1},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"adset_id\",\"adset_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"adset\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"ad\",\"time_increment\":1},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"adset_id\",\"adset_name\",\"ad_id\",\"ad_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"ad\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"account\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_INSIGHTS",
-            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"120252850906040704\",\"level\":\"campaign\",\"time_increment\":\"all_days\"},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"object_id\":\"120252850906040704\",\"fields\":\"date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions\",\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":1000,\"level\":\"campaign\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_OBJECT",
-            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252793713150704\",\"fields\":[\"id\",\"name\",\"status\",\"effective_status\",\"start_time\",\"stop_time\",\"lifetime_budget\",\"adsets.limit(100){id,name,status}\",\"ads.limit(100){id,name,status,adset_id}\"]},\"executedAt\":\"2026-10-07T04:35:11Z\"}"
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"id,name,currency,timezone_name,campaigns.limit(100){id,name,status,lifetime_budget,start_time,stop_time},ads.limit(100){id,name,campaign_id,adset_id,status,creative{id,image_url,thumbnail_url,object_story_spec}}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_OBJECT",
-            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252850906040704\",\"fields\":[\"id\",\"name\",\"status\",\"start_time\",\"stop_time\",\"lifetime_budget\",\"daily_budget\",\"adsets.limit(100){id,name,status,targeting,attribution_spec}\"]},\"executedAt\":\"2026-10-07T04:34:00Z\",\"timestampPrecision\":\"minute\"}"
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839134070704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           },
           {
             "title": "METAADS_GET_OBJECT",
-            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":[\"id\",\"name\",\"currency\",\"timezone_name\"]},\"executedAt\":\"2026-10-07T04:34:00Z\",\"timestampPrecision\":\"minute\"}"
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839135030704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839135900704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839137150704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252839137960704\",\"fields\":\"id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":\"id,adimages.limit(100){hash,name,url,width,height}\"},\"executedAt\":\"2026-10-07T09:10:04.307805+00:00\"}"
           }
         ],
-        "notes": "Dados de 07/10/2026 parciais; atualização sob demanda, sem conexão automática no navegador. Os relatórios por conta, campanha e anúncio apresentaram pequenas diferenças durante a extração. Preserve cada nível consultado; não ajuste artificialmente os resultados. O total da conta inclui a campanha arquivada “rascunho 1”. O orçamento de R$ 1.500 pertence apenas à campanha ativa. Nenhuma ação de lead de site foi reportada. Ausência de ação é mantida como null, sem afirmar que houve zero leads ou que o rastreamento foi validado. Alcance é deduplicado pela Meta e não deve ser somado entre datas, campanhas, públicos ou anúncios. Anúncios sem linha de insights no período têm deliveryStatus no_delivery e métricas ausentes, sem valores inventados. Metadados dos anúncios e do conjunto da campanha arquivada foram recuperados dos insights; seu status individual não está confirmado."
+        "notes": "Dados de 07/10/2026 parciais; atualização sob demanda, sem conexão automática no navegador. Os relatórios por conta, campanha e anúncio apresentaram pequenas diferenças durante a extração. Preserve cada nível consultado; não ajuste artificialmente os resultados. O total da conta inclui a campanha arquivada “rascunho 1”. O orçamento de R$ 1.500 pertence apenas à campanha ativa. Nenhuma ação de lead de site foi reportada. Ausência de ação é mantida como null, sem afirmar que houve zero leads ou que o rastreamento foi validado. Alcance é deduplicado pela Meta e não deve ser somado entre datas, campanhas, públicos ou anúncios. Anúncios sem linha de insights no período têm deliveryStatus no_delivery e métricas ausentes, sem valores inventados. Status dos anúncios arquivados confirmado na atualização; status do conjunto histórico permanece não confirmado. Imagens vinculadas pelo image_hash da Meta."
       },
       "methods": [
         {
@@ -974,7 +901,7 @@
   },
   "id": "dashboard:c5c5723c-67ad-4dee-9064-0fb06b6d43e5",
   "meta": {
-    "extractedAt": "2026-10-07T04:35:44Z",
+    "extractedAt": "2026-10-07T09:10:04.307805+00:00",
     "timezone": "America/Sao_Paulo",
     "currency": "BRL",
     "period": {
@@ -993,9 +920,9 @@
       "id": "120252850906040704",
       "name": "RC_META_LEADS_BloqueioWhatsApp_2026-10 a",
       "status": "ACTIVE",
+      "budget": 1500,
       "startTime": "2026-10-06T23:51:56-0300",
-      "endTime": "2026-11-06T22:51:56-0300",
-      "budget": 1500
+      "endTime": "2026-11-06T22:51:56-0300"
     },
     "campaigns": [
       {
@@ -1010,9 +937,9 @@
         "id": "120252850906040704",
         "name": "RC_META_LEADS_BloqueioWhatsApp_2026-10 a",
         "status": "ACTIVE",
+        "budget": 1500,
         "startTime": "2026-10-06T23:51:56-0300",
-        "endTime": "2026-11-06T22:51:56-0300",
-        "budget": 1500
+        "endTime": "2026-11-06T22:51:56-0300"
       }
     ],
     "adsets": [
@@ -1056,7 +983,26 @@
         "destination": "https://curi.adv.br/plataformas-digitais/",
         "campaignId": "120252850906040704",
         "concept": "AD04",
-        "deliveryStatus": "delivered"
+        "deliveryStatus": "delivered",
+        "creativeId": "2563139870848735",
+        "media": [
+          {
+            "hash": "c42f376aa3ad7ab26ee09e6c2ba02af3",
+            "title": "Análise jurídica estruturada"
+          },
+          {
+            "hash": "1cf83174fadfd5ce5c16f75a5d971e40",
+            "title": "O que pode ser analisado?"
+          },
+          {
+            "hash": "07556f377017d5e63396e9d947420632",
+            "title": "Avaliar os desdobramentos"
+          },
+          {
+            "hash": "0ad87866b69f427fb90457443968b8de",
+            "title": "Realidade empresarial"
+          }
+        ]
       },
       {
         "id": "120252850906010704",
@@ -1067,7 +1013,22 @@
         "destination": "https://curi.adv.br/plataformas-digitais/",
         "campaignId": "120252850906040704",
         "concept": "AD02",
-        "deliveryStatus": "no_delivery"
+        "deliveryStatus": "no_delivery",
+        "creativeId": "1037218712687861",
+        "media": [
+          {
+            "hash": "4c5f14097233717151743243462c4207",
+            "title": "Checklist pós-bloqueio"
+          },
+          {
+            "hash": "98f2301b47fd53b11857da48166fdea2",
+            "title": "Registre, reúna, documente"
+          },
+          {
+            "hash": "0bf4eba83baf2c08096d35ceb3e9c798",
+            "title": "O bloqueio continua?"
+          }
+        ]
       },
       {
         "id": "120252850906000704",
@@ -1078,7 +1039,14 @@
         "destination": "https://curi.adv.br/plataformas-digitais/",
         "campaignId": "120252850906040704",
         "concept": "AD01",
-        "deliveryStatus": "no_delivery"
+        "deliveryStatus": "no_delivery",
+        "creativeId": "1410477530609173",
+        "media": [
+          {
+            "hash": "e27f16615c45b93ac0dc9d04473c8287",
+            "title": "Seu WhatsApp Business foi bloqueado?"
+          }
+        ]
       },
       {
         "id": "120252850905910704",
@@ -1089,7 +1057,14 @@
         "destination": "https://curi.adv.br/plataformas-digitais/",
         "campaignId": "120252850906040704",
         "concept": "AD05",
-        "deliveryStatus": "no_delivery"
+        "deliveryStatus": "delivered",
+        "creativeId": "1074683305359856",
+        "media": [
+          {
+            "hash": "32f12d92c9f66095b747cbf51481b174",
+            "title": "Conta corporativa sem acesso?"
+          }
+        ]
       },
       {
         "id": "120252850905900704",
@@ -1100,7 +1075,14 @@
         "destination": "https://curi.adv.br/plataformas-digitais/",
         "campaignId": "120252850906040704",
         "concept": "AD03",
-        "deliveryStatus": "no_delivery"
+        "deliveryStatus": "delivered",
+        "creativeId": "1121047380369648",
+        "media": [
+          {
+            "hash": "65520f90e093fe7bbd3e307d12aff0b2",
+            "title": "Quando a solução sai do suporte"
+          }
+        ]
       },
       {
         "id": "120252850906020704",
@@ -1111,7 +1093,26 @@
         "destination": "https://curi.adv.br/plataformas-digitais/",
         "campaignId": "120252850906040704",
         "concept": "AD04",
-        "deliveryStatus": "no_delivery"
+        "deliveryStatus": "no_delivery",
+        "creativeId": "1129102242802513",
+        "media": [
+          {
+            "hash": "c42f376aa3ad7ab26ee09e6c2ba02af3",
+            "title": "Análise jurídica estruturada"
+          },
+          {
+            "hash": "1cf83174fadfd5ce5c16f75a5d971e40",
+            "title": "O que pode ser analisado?"
+          },
+          {
+            "hash": "07556f377017d5e63396e9d947420632",
+            "title": "Avaliar os desdobramentos"
+          },
+          {
+            "hash": "0ad87866b69f427fb90457443968b8de",
+            "title": "Realidade empresarial"
+          }
+        ]
       },
       {
         "id": "120252850905930704",
@@ -1122,7 +1123,22 @@
         "destination": "https://curi.adv.br/plataformas-digitais/",
         "campaignId": "120252850906040704",
         "concept": "AD02",
-        "deliveryStatus": "delivered"
+        "deliveryStatus": "delivered",
+        "creativeId": "1637622681174350",
+        "media": [
+          {
+            "hash": "4c5f14097233717151743243462c4207",
+            "title": "Checklist pós-bloqueio"
+          },
+          {
+            "hash": "98f2301b47fd53b11857da48166fdea2",
+            "title": "Registre, reúna, documente"
+          },
+          {
+            "hash": "0bf4eba83baf2c08096d35ceb3e9c798",
+            "title": "O bloqueio continua?"
+          }
+        ]
       },
       {
         "id": "120252850905880704",
@@ -1133,7 +1149,14 @@
         "destination": "https://curi.adv.br/plataformas-digitais/",
         "campaignId": "120252850906040704",
         "concept": "AD05",
-        "deliveryStatus": "no_delivery"
+        "deliveryStatus": "delivered",
+        "creativeId": "1543821800840736",
+        "media": [
+          {
+            "hash": "32f12d92c9f66095b747cbf51481b174",
+            "title": "Conta corporativa sem acesso?"
+          }
+        ]
       },
       {
         "id": "120252850905920704",
@@ -1144,7 +1167,14 @@
         "destination": "https://curi.adv.br/plataformas-digitais/",
         "campaignId": "120252850906040704",
         "concept": "AD03",
-        "deliveryStatus": "no_delivery"
+        "deliveryStatus": "delivered",
+        "creativeId": "1134088009563467",
+        "media": [
+          {
+            "hash": "65520f90e093fe7bbd3e307d12aff0b2",
+            "title": "Quando a solução sai do suporte"
+          }
+        ]
       },
       {
         "id": "120252850905870704",
@@ -1155,7 +1185,14 @@
         "destination": "https://curi.adv.br/plataformas-digitais/",
         "campaignId": "120252850906040704",
         "concept": "AD01",
-        "deliveryStatus": "no_delivery"
+        "deliveryStatus": "delivered",
+        "creativeId": "2067028397438813",
+        "media": [
+          {
+            "hash": "e27f16615c45b93ac0dc9d04473c8287",
+            "title": "Seu WhatsApp Business foi bloqueado?"
+          }
+        ]
       },
       {
         "id": "120252850905960704",
@@ -1166,7 +1203,26 @@
         "destination": "https://curi.adv.br/plataformas-digitais/",
         "campaignId": "120252850906040704",
         "concept": "AD04",
-        "deliveryStatus": "delivered"
+        "deliveryStatus": "delivered",
+        "creativeId": "1441079131252460",
+        "media": [
+          {
+            "hash": "c42f376aa3ad7ab26ee09e6c2ba02af3",
+            "title": "Análise jurídica estruturada"
+          },
+          {
+            "hash": "1cf83174fadfd5ce5c16f75a5d971e40",
+            "title": "O que pode ser analisado?"
+          },
+          {
+            "hash": "07556f377017d5e63396e9d947420632",
+            "title": "Avaliar os desdobramentos"
+          },
+          {
+            "hash": "0ad87866b69f427fb90457443968b8de",
+            "title": "Realidade empresarial"
+          }
+        ]
       },
       {
         "id": "120252850905860704",
@@ -1177,7 +1233,14 @@
         "destination": "https://curi.adv.br/plataformas-digitais/",
         "campaignId": "120252850906040704",
         "concept": "AD03",
-        "deliveryStatus": "delivered"
+        "deliveryStatus": "delivered",
+        "creativeId": "29676292458627315",
+        "media": [
+          {
+            "hash": "65520f90e093fe7bbd3e307d12aff0b2",
+            "title": "Quando a solução sai do suporte"
+          }
+        ]
       },
       {
         "id": "120252850905950704",
@@ -1188,7 +1251,14 @@
         "destination": "https://curi.adv.br/plataformas-digitais/",
         "campaignId": "120252850906040704",
         "concept": "AD01",
-        "deliveryStatus": "delivered"
+        "deliveryStatus": "delivered",
+        "creativeId": "1640631177603383",
+        "media": [
+          {
+            "hash": "e27f16615c45b93ac0dc9d04473c8287",
+            "title": "Seu WhatsApp Business foi bloqueado?"
+          }
+        ]
       },
       {
         "id": "120252850905980704",
@@ -1199,7 +1269,22 @@
         "destination": "https://curi.adv.br/plataformas-digitais/",
         "campaignId": "120252850906040704",
         "concept": "AD02",
-        "deliveryStatus": "no_delivery"
+        "deliveryStatus": "no_delivery",
+        "creativeId": "1559628272631391",
+        "media": [
+          {
+            "hash": "4c5f14097233717151743243462c4207",
+            "title": "Checklist pós-bloqueio"
+          },
+          {
+            "hash": "98f2301b47fd53b11857da48166fdea2",
+            "title": "Registre, reúna, documente"
+          },
+          {
+            "hash": "0bf4eba83baf2c08096d35ceb3e9c798",
+            "title": "O bloqueio continua?"
+          }
+        ]
       },
       {
         "id": "120252850906030704",
@@ -1210,149 +1295,160 @@
         "destination": "https://curi.adv.br/plataformas-digitais/",
         "campaignId": "120252850906040704",
         "concept": "AD05",
-        "deliveryStatus": "no_delivery"
+        "deliveryStatus": "delivered",
+        "creativeId": "1448136003884171",
+        "media": [
+          {
+            "hash": "32f12d92c9f66095b747cbf51481b174",
+            "title": "Conta corporativa sem acesso?"
+          }
+        ]
       },
       {
         "id": "120252839134070704",
         "name": "AD01_Post01_Imagem_v2",
         "adsetId": "120252799922750704",
         "campaignId": "120252793713150704",
-        "status": "UNKNOWN",
+        "status": "ARCHIVED",
         "concept": "AD01",
         "destination": null,
         "historical": true,
-        "deliveryStatus": "delivered"
+        "deliveryStatus": "delivered",
+        "creativeId": "1895980625144104",
+        "copy": "Para muitas empresas, o WhatsApp faz parte da operação comercial: vendas, atendimento, suporte e relacionamento com clientes.\n\nQuando esse canal é bloqueado, os efeitos podem atingir diferentes atividades do negócio.\n\nNesse contexto, decisões judiciais têm determinado o restabelecimento de contas corporativas em determinadas situações, especialmente diante de restrições que não foram solucionadas pela plataforma.\n\nO tema mostra que o bloqueio de uma conta empresarial pode envolver questões que vão além do funcionamento da plataforma e precisam ser avaliadas sob a perspectiva jurídica.\n\nO Rücker Curi possui experiência em questões envolvendo plataformas digitais, considerando os aspectos jurídicos e os impactos para a atividade empresarial.",
+        "media": [
+          {
+            "hash": "e27f16615c45b93ac0dc9d04473c8287",
+            "title": "Seu WhatsApp Business foi bloqueado?"
+          }
+        ]
       },
       {
         "id": "120252839135030704",
         "name": "AD02_Post02_Carrossel_v2",
         "adsetId": "120252799922750704",
         "campaignId": "120252793713150704",
-        "status": "UNKNOWN",
+        "status": "ARCHIVED",
         "concept": "AD02",
         "destination": null,
         "historical": true,
-        "deliveryStatus": "delivered"
+        "deliveryStatus": "delivered",
+        "creativeId": "944537004937279",
+        "copy": "Depois que uma conta do WhatsApp Business é bloqueada, a prioridade costuma ser recuperar o acesso.\n\nNesse processo, é importante preservar as informações relacionadas à restrição.\n\nMensagens da plataforma, notificações, protocolos, tentativas de revisão e registros dos impactos ajudam a documentar o que aconteceu.\n\nEsse histórico pode ser relevante para compreender o caso e seus possíveis desdobramentos.\n\nA experiência do Rücker Curi em questões envolvendo plataformas digitais permite considerar os aspectos jurídicos e os impactos para a atividade empresarial.",
+        "media": [
+          {
+            "hash": "4c5f14097233717151743243462c4207",
+            "title": "Checklist pós-bloqueio"
+          },
+          {
+            "hash": "98f2301b47fd53b11857da48166fdea2",
+            "title": "Registre, reúna, documente"
+          },
+          {
+            "hash": "0bf4eba83baf2c08096d35ceb3e9c798",
+            "title": "O bloqueio continua?"
+          }
+        ]
       },
       {
         "id": "120252839135900704",
         "name": "AD03_Post03_Imagem_v2",
         "adsetId": "120252799922750704",
         "campaignId": "120252793713150704",
-        "status": "UNKNOWN",
+        "status": "ARCHIVED",
         "concept": "AD03",
         "destination": null,
         "historical": true,
-        "deliveryStatus": "delivered"
+        "deliveryStatus": "delivered",
+        "creativeId": "1801591884371177",
+        "copy": "Nem todo bloqueio termina com uma resposta do suporte.\n\nQuando a empresa busca solucionar a situação diretamente com a plataforma e continua sem acesso, a questão pode assumir uma dimensão jurídica.\n\nO Poder Judiciário tem analisado casos envolvendo bloqueios de contas corporativas e, em determinadas situações, determinado o restabelecimento do acesso.\n\nA experiência do Rücker Curi nesse tema permite acompanhar de perto uma discussão que vem ganhando relevância para empresas que dependem desses canais.",
+        "media": [
+          {
+            "hash": "65520f90e093fe7bbd3e307d12aff0b2",
+            "title": "Quando a solução sai do suporte"
+          }
+        ]
       },
       {
         "id": "120252839137150704",
         "name": "AD04_Post04_Carrossel_v2",
         "adsetId": "120252799922750704",
         "campaignId": "120252793713150704",
-        "status": "UNKNOWN",
+        "status": "ARCHIVED",
         "concept": "AD04",
         "destination": null,
         "historical": true,
-        "deliveryStatus": "delivered"
+        "deliveryStatus": "delivered",
+        "creativeId": "1596224945314070",
+        "copy": "A relação entre empresas e plataformas digitais traz questões que exigem conhecimento jurídico específico.\n\nRestrições de acesso podem afetar canais importantes da operação e demandar uma análise que considere tanto os aspectos jurídicos quanto o contexto empresarial.\n\nCom atuação em Direito Digital e Contencioso Estratégico, o Rücker Curi possui experiência na análise dessas situações e de seus possíveis desdobramentos.",
+        "media": [
+          {
+            "hash": "c42f376aa3ad7ab26ee09e6c2ba02af3",
+            "title": "Análise jurídica estruturada"
+          },
+          {
+            "hash": "1cf83174fadfd5ce5c16f75a5d971e40",
+            "title": "O que pode ser analisado?"
+          },
+          {
+            "hash": "07556f377017d5e63396e9d947420632",
+            "title": "Avaliar os desdobramentos"
+          },
+          {
+            "hash": "0ad87866b69f427fb90457443968b8de",
+            "title": "Realidade empresarial"
+          }
+        ]
       },
       {
         "id": "120252839137960704",
         "name": "AD05_Post06_Imagem_v2",
         "adsetId": "120252799922750704",
         "campaignId": "120252793713150704",
-        "status": "UNKNOWN",
+        "status": "ARCHIVED",
         "concept": "AD05",
         "destination": null,
         "historical": true,
-        "deliveryStatus": "delivered"
+        "deliveryStatus": "delivered",
+        "creativeId": "969676315523904",
+        "copy": "O bloqueio de uma conta corporativa pode deixar de ser apenas uma dificuldade operacional quando o acesso permanece indisponível e o canal é relevante para as atividades da empresa.\n\nNessas situações, a análise jurídica considera o contexto da restrição, as circunstâncias do caso e os possíveis desdobramentos.\n\nA experiência do Rücker Curi em Direito Digital e Contencioso Estratégico inclui questões envolvendo empresas e plataformas digitais, acompanhando os impactos jurídicos dessas relações.\n\nCada situação possui características próprias e exige uma avaliação compatível com o seu contexto.",
+        "media": [
+          {
+            "hash": "32f12d92c9f66095b747cbf51481b174",
+            "title": "Conta corporativa sem acesso?"
+          }
+        ]
       }
     ],
     "accountTotal": {
       "date": "2026-10-06",
-      "dateEnd": "2026-10-07",
-      "spend": 20.93,
-      "impressions": 760,
-      "reach": 625,
-      "clicks": 9,
-      "linkClicks": 6,
-      "landingPageViews": 2,
-      "leads": null,
-      "rawActions": [
-        {
-          "action_type": "link_click",
-          "value": "6"
-        },
-        {
-          "action_type": "landing_page_view",
-          "value": "2"
-        },
-        {
-          "action_type": "omni_landing_page_view",
-          "value": "2"
-        },
-        {
-          "action_type": "post_engagement",
-          "value": "7"
-        },
-        {
-          "action_type": "post_interaction_gross",
-          "value": "1"
-        },
-        {
-          "action_type": "page_engagement",
-          "value": "7"
-        },
-        {
-          "action_type": "post_interaction_net",
-          "value": "1"
-        },
-        {
-          "action_type": "post",
-          "value": "1"
-        }
-      ]
+      "dateStop": "2026-10-07",
+      "spend": 21.27,
+      "impressions": 791,
+      "reach": 650,
+      "clicks": 11,
+      "linkClicks": 8,
+      "landingPageViews": 3,
+      "leads": null
     },
     "campaignTotal": {
       "date": "2026-10-06",
-      "dateEnd": "2026-10-07",
-      "spend": 0.05,
-      "impressions": 10,
-      "reach": 6,
-      "clicks": 1,
-      "linkClicks": 1,
-      "landingPageViews": null,
-      "leads": null,
-      "rawActions": [
-        {
-          "action_type": "link_click",
-          "value": "1"
-        },
-        {
-          "action_type": "post_engagement",
-          "value": "1"
-        },
-        {
-          "action_type": "page_engagement",
-          "value": "1"
-        }
-      ],
-      "campaignId": "120252850906040704"
+      "dateStop": "2026-10-07",
+      "campaignId": "120252850906040704",
+      "spend": 0.25,
+      "impressions": 37,
+      "reach": 28,
+      "clicks": 3,
+      "linkClicks": 3,
+      "landingPageViews": 1,
+      "leads": null
     },
     "sourceRequests": [
       {
         "tool": "METAADS_GET_INSIGHTS",
         "arguments": {
-          "fields": [
-            "date_start",
-            "date_stop",
-            "spend",
-            "impressions",
-            "reach",
-            "clicks",
-            "inline_link_clicks",
-            "actions"
-          ],
+          "object_id": "act_2489051944900337",
+          "fields": "date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions",
           "time_range": {
             "since": "2026-10-06",
             "until": "2026-10-07"
@@ -1361,56 +1457,17 @@
             "7d_click",
             "1d_view"
           ],
-          "limit": 101,
-          "object_id": "act_2489051944900337",
-          "level": "account",
-          "time_increment": "all_days"
-        },
-        "executedAt": "2026-10-07T04:35:44Z"
-      },
-      {
-        "tool": "METAADS_GET_INSIGHTS",
-        "arguments": {
-          "fields": [
-            "date_start",
-            "date_stop",
-            "spend",
-            "impressions",
-            "reach",
-            "clicks",
-            "inline_link_clicks",
-            "actions"
-          ],
-          "time_range": {
-            "since": "2026-10-06",
-            "until": "2026-10-07"
-          },
-          "action_attribution_windows": [
-            "7d_click",
-            "1d_view"
-          ],
-          "limit": 101,
-          "object_id": "act_2489051944900337",
+          "limit": 1000,
           "level": "account",
           "time_increment": 1
         },
-        "executedAt": "2026-10-07T04:35:44Z"
+        "executedAt": "2026-10-07T09:10:04.307805+00:00"
       },
       {
         "tool": "METAADS_GET_INSIGHTS",
         "arguments": {
-          "fields": [
-            "campaign_id",
-            "campaign_name",
-            "date_start",
-            "date_stop",
-            "spend",
-            "impressions",
-            "reach",
-            "clicks",
-            "inline_link_clicks",
-            "actions"
-          ],
+          "object_id": "act_2489051944900337",
+          "fields": "date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions",
           "time_range": {
             "since": "2026-10-06",
             "until": "2026-10-07"
@@ -1419,30 +1476,17 @@
             "7d_click",
             "1d_view"
           ],
-          "limit": 101,
-          "object_id": "act_2489051944900337",
+          "limit": 1000,
           "level": "campaign",
           "time_increment": 1
         },
-        "executedAt": "2026-10-07T04:35:44Z"
+        "executedAt": "2026-10-07T09:10:04.307805+00:00"
       },
       {
         "tool": "METAADS_GET_INSIGHTS",
         "arguments": {
-          "fields": [
-            "campaign_id",
-            "campaign_name",
-            "adset_id",
-            "adset_name",
-            "date_start",
-            "date_stop",
-            "spend",
-            "impressions",
-            "reach",
-            "clicks",
-            "inline_link_clicks",
-            "actions"
-          ],
+          "object_id": "act_2489051944900337",
+          "fields": "date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions",
           "time_range": {
             "since": "2026-10-06",
             "until": "2026-10-07"
@@ -1451,32 +1495,17 @@
             "7d_click",
             "1d_view"
           ],
-          "limit": 101,
-          "object_id": "act_2489051944900337",
+          "limit": 1000,
           "level": "adset",
           "time_increment": 1
         },
-        "executedAt": "2026-10-07T04:35:44Z"
+        "executedAt": "2026-10-07T09:10:04.307805+00:00"
       },
       {
         "tool": "METAADS_GET_INSIGHTS",
         "arguments": {
-          "fields": [
-            "campaign_id",
-            "campaign_name",
-            "adset_id",
-            "adset_name",
-            "ad_id",
-            "ad_name",
-            "date_start",
-            "date_stop",
-            "spend",
-            "impressions",
-            "reach",
-            "clicks",
-            "inline_link_clicks",
-            "actions"
-          ],
+          "object_id": "act_2489051944900337",
+          "fields": "date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions",
           "time_range": {
             "since": "2026-10-06",
             "until": "2026-10-07"
@@ -1485,26 +1514,17 @@
             "7d_click",
             "1d_view"
           ],
-          "limit": 101,
-          "object_id": "act_2489051944900337",
+          "limit": 1000,
           "level": "ad",
           "time_increment": 1
         },
-        "executedAt": "2026-10-07T04:35:44Z"
+        "executedAt": "2026-10-07T09:10:04.307805+00:00"
       },
       {
         "tool": "METAADS_GET_INSIGHTS",
         "arguments": {
-          "fields": [
-            "date_start",
-            "date_stop",
-            "spend",
-            "impressions",
-            "reach",
-            "clicks",
-            "inline_link_clicks",
-            "actions"
-          ],
+          "object_id": "act_2489051944900337",
+          "fields": "date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions",
           "time_range": {
             "since": "2026-10-06",
             "until": "2026-10-07"
@@ -1513,62 +1533,84 @@
             "7d_click",
             "1d_view"
           ],
-          "limit": 101,
-          "object_id": "120252850906040704",
-          "level": "campaign",
-          "time_increment": "all_days"
+          "limit": 1000,
+          "level": "account"
         },
-        "executedAt": "2026-10-07T04:35:44Z"
+        "executedAt": "2026-10-07T09:10:04.307805+00:00"
       },
       {
-        "tool": "METAADS_GET_OBJECT",
-        "arguments": {
-          "object_id": "120252793713150704",
-          "fields": [
-            "id",
-            "name",
-            "status",
-            "effective_status",
-            "start_time",
-            "stop_time",
-            "lifetime_budget",
-            "adsets.limit(100){id,name,status}",
-            "ads.limit(100){id,name,status,adset_id}"
-          ]
-        },
-        "executedAt": "2026-10-07T04:35:11Z"
-      },
-      {
-        "tool": "METAADS_GET_OBJECT",
+        "tool": "METAADS_GET_INSIGHTS",
         "arguments": {
           "object_id": "120252850906040704",
-          "fields": [
-            "id",
-            "name",
-            "status",
-            "start_time",
-            "stop_time",
-            "lifetime_budget",
-            "daily_budget",
-            "adsets.limit(100){id,name,status,targeting,attribution_spec}"
-          ]
+          "fields": "date_start,date_stop,account_id,campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,reach,clicks,inline_link_clicks,actions",
+          "time_range": {
+            "since": "2026-10-06",
+            "until": "2026-10-07"
+          },
+          "action_attribution_windows": [
+            "7d_click",
+            "1d_view"
+          ],
+          "limit": 1000,
+          "level": "campaign"
         },
-        "executedAt": "2026-10-07T04:34:00Z",
-        "timestampPrecision": "minute"
+        "executedAt": "2026-10-07T09:10:04.307805+00:00"
       },
       {
         "tool": "METAADS_GET_OBJECT",
         "arguments": {
           "object_id": "act_2489051944900337",
-          "fields": [
-            "id",
-            "name",
-            "currency",
-            "timezone_name"
-          ]
+          "fields": "id,name,currency,timezone_name,campaigns.limit(100){id,name,status,lifetime_budget,start_time,stop_time},ads.limit(100){id,name,campaign_id,adset_id,status,creative{id,image_url,thumbnail_url,object_story_spec}}"
         },
-        "executedAt": "2026-10-07T04:34:00Z",
-        "timestampPrecision": "minute"
+        "executedAt": "2026-10-07T09:10:04.307805+00:00"
+      },
+      {
+        "tool": "METAADS_GET_OBJECT",
+        "arguments": {
+          "object_id": "120252839134070704",
+          "fields": "id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}"
+        },
+        "executedAt": "2026-10-07T09:10:04.307805+00:00"
+      },
+      {
+        "tool": "METAADS_GET_OBJECT",
+        "arguments": {
+          "object_id": "120252839135030704",
+          "fields": "id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}"
+        },
+        "executedAt": "2026-10-07T09:10:04.307805+00:00"
+      },
+      {
+        "tool": "METAADS_GET_OBJECT",
+        "arguments": {
+          "object_id": "120252839135900704",
+          "fields": "id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}"
+        },
+        "executedAt": "2026-10-07T09:10:04.307805+00:00"
+      },
+      {
+        "tool": "METAADS_GET_OBJECT",
+        "arguments": {
+          "object_id": "120252839137150704",
+          "fields": "id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}"
+        },
+        "executedAt": "2026-10-07T09:10:04.307805+00:00"
+      },
+      {
+        "tool": "METAADS_GET_OBJECT",
+        "arguments": {
+          "object_id": "120252839137960704",
+          "fields": "id,name,status,campaign_id,adset_id,creative{id,image_url,thumbnail_url,object_story_spec}"
+        },
+        "executedAt": "2026-10-07T09:10:04.307805+00:00"
+      },
+      {
+        "tool": "METAADS_GET_OBJECT",
+        "arguments": {
+          "object_id": "act_2489051944900337",
+          "fields": "id,adimages.limit(100){hash,name,url,width,height}"
+        },
+        "executedAt": "2026-10-07T09:10:04.307805+00:00"
       }
     ],
     "limitations": [
@@ -1578,22 +1620,29 @@
       "Nenhuma ação de lead de site foi reportada. Ausência de ação é mantida como null, sem afirmar que houve zero leads ou que o rastreamento foi validado.",
       "Alcance é deduplicado pela Meta e não deve ser somado entre datas, campanhas, públicos ou anúncios.",
       "Anúncios sem linha de insights no período têm deliveryStatus no_delivery e métricas ausentes, sem valores inventados.",
-      "Metadados dos anúncios e do conjunto da campanha arquivada foram recuperados dos insights; seu status individual não está confirmado."
+      "Status dos anúncios arquivados confirmado na atualização; status do conjunto histórico permanece não confirmado. Imagens vinculadas pelo image_hash da Meta."
     ],
     "reconciliation": {
-      "status": "minor_live_reporting_differences",
-      "dailySpend": 20.91,
-      "accountTotalSpend": 20.93,
-      "campaignDailySpend": 20.93,
-      "adsetDailySpend": 20.93,
-      "adDailySpend": 20.91,
-      "dailyImpressions": 757,
-      "accountTotalImpressions": 760,
-      "campaignDailyImpressions": 760,
-      "adsetDailyImpressions": 760,
-      "adDailyImpressions": 758,
-      "recommendedKpiSource": "daily",
-      "description": "Usar daily para investimento, impressões e cliques gerais e evolução. accountTotal.reach (625) é o alcance deduplicado do período completo. Diferentes níveis retornaram dados em atualização; não forçar igualdade."
+      "daily": {
+        "spend": 21.27,
+        "impressions": 791,
+        "linkClicks": 8
+      },
+      "campaignDaily": {
+        "spend": 21.27,
+        "impressions": 791,
+        "linkClicks": 8
+      },
+      "adsetDaily": {
+        "spend": 21.27,
+        "impressions": 791,
+        "linkClicks": 8
+      },
+      "adDaily": {
+        "spend": 21.27,
+        "impressions": 791,
+        "linkClicks": 8
+      }
     }
   }
 }

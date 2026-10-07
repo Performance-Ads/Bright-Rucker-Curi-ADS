@@ -31,3 +31,9 @@ O site usa um snapshot estático: nenhuma credencial do Meta é enviada ao naveg
 ## Identidade
 
 Azul-escuro, dourado e off-white; fontes Instrument Serif e Inter, distribuídas pelo Google Fonts sob SIL Open Font License. A referência visual é o dashboard Bright da Reymaster, adaptado aos resultados da Rucker Curi.
+
+## Galeria de criativos
+As imagens são cópias dos arquivos da Meta vinculadas pelo image_hash de cada anúncio, sem URLs temporárias. A galeria fica abaixo da tabela e segue os filtros de período, campanha e público. Ordenação inicial por cliques no link; empates e métricas ausentes permanecem explícitos. Campanha atual e histórico são grupos separados. Carrosséis mostram suas peças, mas as métricas correspondem ao anúncio inteiro.
+
+A atualização de 07/10/2026 às 06:10 (Brasília) reconcilia R$ 21,27, 791 impressões e 8 cliques no link nos quatro níveis consultados. Nenhum lead reportado. Imagens confirmadas também nos anúncios arquivados.
+

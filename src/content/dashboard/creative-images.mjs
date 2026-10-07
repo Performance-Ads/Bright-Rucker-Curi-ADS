@@ -1,0 +1,11 @@
+import image0 from "../assets/creatives/07556f377017d5e63396e9d947420632.jpg";
+import image1 from "../assets/creatives/0ad87866b69f427fb90457443968b8de.jpg";
+import image2 from "../assets/creatives/0bf4eba83baf2c08096d35ceb3e9c798.jpg";
+import image3 from "../assets/creatives/1cf83174fadfd5ce5c16f75a5d971e40.jpg";
+import image4 from "../assets/creatives/32f12d92c9f66095b747cbf51481b174.jpg";
+import image5 from "../assets/creatives/4c5f14097233717151743243462c4207.jpg";
+import image6 from "../assets/creatives/65520f90e093fe7bbd3e307d12aff0b2.jpg";
+import image7 from "../assets/creatives/98f2301b47fd53b11857da48166fdea2.jpg";
+import image8 from "../assets/creatives/c42f376aa3ad7ab26ee09e6c2ba02af3.jpg";
+import image9 from "../assets/creatives/e27f16615c45b93ac0dc9d04473c8287.jpg";
+export const creativeImages={"07556f377017d5e63396e9d947420632":image0,"0ad87866b69f427fb90457443968b8de":image1,"0bf4eba83baf2c08096d35ceb3e9c798":image2,"1cf83174fadfd5ce5c16f75a5d971e40":image3,"32f12d92c9f66095b747cbf51481b174":image4,"4c5f14097233717151743243462c4207":image5,"65520f90e093fe7bbd3e307d12aff0b2":image6,"98f2301b47fd53b11857da48166fdea2":image7,"c42f376aa3ad7ab26ee09e6c2ba02af3":image8,"e27f16615c45b93ac0dc9d04473c8287":image9};
