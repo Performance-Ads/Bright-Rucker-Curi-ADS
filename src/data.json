@@ -1,0 +1,1599 @@
+{
+  "surface": "dashboard",
+  "title": "Rücker Curi · Bright Performance",
+  "generatedAt": "2026-10-07T04:35:44Z",
+  "buildStatus": "complete",
+  "status": "reviewed",
+  "filters": [
+    {
+      "id": "date",
+      "label": "Período",
+      "field": "date",
+      "mode": "range",
+      "defaultValue": "2026-10-06..2026-10-07",
+      "queryIds": [
+        "meta_daily",
+        "meta_campaign_daily",
+        "meta_adset_daily",
+        "meta_ad_daily"
+      ]
+    },
+    {
+      "id": "campaignId",
+      "label": "Campanha",
+      "field": "campaignId",
+      "defaultValue": "all",
+      "queryIds": [
+        "meta_campaign_daily",
+        "meta_adset_daily",
+        "meta_ad_daily"
+      ]
+    },
+    {
+      "id": "adsetId",
+      "label": "Público",
+      "field": "adsetId",
+      "defaultValue": "all",
+      "queryIds": [
+        "meta_adset_daily",
+        "meta_ad_daily"
+      ]
+    }
+  ],
+  "queries": {
+    "meta_daily": {
+      "rows": [
+        {
+          "date": "2026-10-06",
+          "dateEnd": "2026-10-06",
+          "spend": 20.88,
+          "impressions": 750,
+          "reach": 621,
+          "clicks": 8,
+          "linkClicks": 5,
+          "landingPageViews": 2,
+          "leads": null,
+          "rawActions": [
+            {
+              "action_type": "link_click",
+              "value": "5"
+            },
+            {
+              "action_type": "landing_page_view",
+              "value": "2"
+            },
+            {
+              "action_type": "omni_landing_page_view",
+              "value": "2"
+            },
+            {
+              "action_type": "post_engagement",
+              "value": "6"
+            },
+            {
+              "action_type": "post_interaction_gross",
+              "value": "1"
+            },
+            {
+              "action_type": "page_engagement",
+              "value": "6"
+            },
+            {
+              "action_type": "post_interaction_net",
+              "value": "1"
+            },
+            {
+              "action_type": "post",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-07",
+          "dateEnd": "2026-10-07",
+          "spend": 0.03,
+          "impressions": 7,
+          "reach": 6,
+          "clicks": 1,
+          "linkClicks": 1,
+          "landingPageViews": null,
+          "leads": null,
+          "rawActions": [
+            {
+              "action_type": "link_click",
+              "value": "1"
+            },
+            {
+              "action_type": "post_engagement",
+              "value": "1"
+            },
+            {
+              "action_type": "page_engagement",
+              "value": "1"
+            }
+          ]
+        }
+      ],
+      "source": {
+        "provider": "Meta Ads MCP",
+        "type": "api",
+        "description": "Entrega diária da conta selecionada. Inclui o histórico arquivado.",
+        "grain": "conta × dia",
+        "currency": "BRL",
+        "timezone": "America/Sao_Paulo",
+        "executedAt": "2026-10-07T04:35:44Z",
+        "coverage": {
+          "start": "2026-10-06",
+          "end": "2026-10-07"
+        },
+        "metricDefinitions": [
+          {
+            "label": "Investimento",
+            "definition": "Valor gasto no Meta Ads, em reais, somado dentro do período e dos filtros selecionados."
+          },
+          {
+            "label": "Leads no site",
+            "definition": "Evento de lead atribuído pelo Meta. Tipos equivalentes não são somados entre si. Ação ausente preservada como não reportada."
+          },
+          {
+            "label": "Custo por lead",
+            "definition": "Investimento dividido pelos leads reportados. Indisponível quando o número de leads é ausente ou zero."
+          },
+          {
+            "label": "CTR do link",
+            "definition": "Cliques no link divididos pelas impressões; recalculado após os filtros."
+          },
+          {
+            "label": "CPC do link",
+            "definition": "Investimento dividido pelos cliques no link; recalculado após os filtros."
+          },
+          {
+            "label": "Alcance",
+            "definition": "Valor único retornado diretamente pelo Meta para o escopo consultado. Nunca somado entre dias, campanhas ou públicos."
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"account\",\"time_increment\":\"all_days\"},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"account\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"campaign\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"adset_id\",\"adset_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"adset\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"adset_id\",\"adset_name\",\"ad_id\",\"ad_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"ad\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"120252850906040704\",\"level\":\"campaign\",\"time_increment\":\"all_days\"},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252793713150704\",\"fields\":[\"id\",\"name\",\"status\",\"effective_status\",\"start_time\",\"stop_time\",\"lifetime_budget\",\"adsets.limit(100){id,name,status}\",\"ads.limit(100){id,name,status,adset_id}\"]},\"executedAt\":\"2026-10-07T04:35:11Z\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252850906040704\",\"fields\":[\"id\",\"name\",\"status\",\"start_time\",\"stop_time\",\"lifetime_budget\",\"daily_budget\",\"adsets.limit(100){id,name,status,targeting,attribution_spec}\"]},\"executedAt\":\"2026-10-07T04:34:00Z\",\"timestampPrecision\":\"minute\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":[\"id\",\"name\",\"currency\",\"timezone_name\"]},\"executedAt\":\"2026-10-07T04:34:00Z\",\"timestampPrecision\":\"minute\"}"
+          }
+        ],
+        "notes": "Dados de 07/10/2026 parciais; atualização sob demanda, sem conexão automática no navegador. Os relatórios por conta, campanha e anúncio apresentaram pequenas diferenças durante a extração. Preserve cada nível consultado; não ajuste artificialmente os resultados. O total da conta inclui a campanha arquivada “rascunho 1”. O orçamento de R$ 1.500 pertence apenas à campanha ativa. Nenhuma ação de lead de site foi reportada. Ausência de ação é mantida como null, sem afirmar que houve zero leads ou que o rastreamento foi validado. Alcance é deduplicado pela Meta e não deve ser somado entre datas, campanhas, públicos ou anúncios. Anúncios sem linha de insights no período têm deliveryStatus no_delivery e métricas ausentes, sem valores inventados. Metadados dos anúncios e do conjunto da campanha arquivada foram recuperados dos insights; seu status individual não está confirmado."
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "Dados normalizados da API. Agregar somente medidas aditivas; preservar null; recalcular taxas por razão de somas; aplicar interseção de data, campanha e conjunto. Alcance exige consulta direta no mesmo escopo."
+        }
+      ]
+    },
+    "meta_campaign_daily": {
+      "rows": [
+        {
+          "campaignId": "120252793713150704",
+          "date": "2026-10-06",
+          "dateEnd": "2026-10-06",
+          "spend": 20.88,
+          "impressions": 750,
+          "reach": 621,
+          "clicks": 8,
+          "linkClicks": 5,
+          "landingPageViews": 2,
+          "leads": null,
+          "rawActions": [
+            {
+              "action_type": "link_click",
+              "value": "5"
+            },
+            {
+              "action_type": "landing_page_view",
+              "value": "2"
+            },
+            {
+              "action_type": "omni_landing_page_view",
+              "value": "2"
+            },
+            {
+              "action_type": "post_engagement",
+              "value": "6"
+            },
+            {
+              "action_type": "post_interaction_gross",
+              "value": "1"
+            },
+            {
+              "action_type": "page_engagement",
+              "value": "6"
+            },
+            {
+              "action_type": "post_interaction_net",
+              "value": "1"
+            },
+            {
+              "action_type": "post",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "campaignId": "120252850906040704",
+          "date": "2026-10-07",
+          "dateEnd": "2026-10-07",
+          "spend": 0.05,
+          "impressions": 10,
+          "reach": 6,
+          "clicks": 1,
+          "linkClicks": 1,
+          "landingPageViews": null,
+          "leads": null,
+          "rawActions": [
+            {
+              "action_type": "link_click",
+              "value": "1"
+            },
+            {
+              "action_type": "post_engagement",
+              "value": "1"
+            },
+            {
+              "action_type": "page_engagement",
+              "value": "1"
+            }
+          ]
+        }
+      ],
+      "source": {
+        "provider": "Meta Ads MCP",
+        "type": "api",
+        "description": "Resultados diários de cada campanha, inclusive o histórico arquivado.",
+        "grain": "campanha × dia",
+        "currency": "BRL",
+        "timezone": "America/Sao_Paulo",
+        "executedAt": "2026-10-07T04:35:44Z",
+        "coverage": {
+          "start": "2026-10-06",
+          "end": "2026-10-07"
+        },
+        "metricDefinitions": [
+          {
+            "label": "Investimento",
+            "definition": "Valor gasto no Meta Ads, em reais, somado dentro do período e dos filtros selecionados."
+          },
+          {
+            "label": "Leads no site",
+            "definition": "Evento de lead atribuído pelo Meta. Tipos equivalentes não são somados entre si. Ação ausente preservada como não reportada."
+          },
+          {
+            "label": "Custo por lead",
+            "definition": "Investimento dividido pelos leads reportados. Indisponível quando o número de leads é ausente ou zero."
+          },
+          {
+            "label": "CTR do link",
+            "definition": "Cliques no link divididos pelas impressões; recalculado após os filtros."
+          },
+          {
+            "label": "CPC do link",
+            "definition": "Investimento dividido pelos cliques no link; recalculado após os filtros."
+          },
+          {
+            "label": "Alcance",
+            "definition": "Valor único retornado diretamente pelo Meta para o escopo consultado. Nunca somado entre dias, campanhas ou públicos."
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"account\",\"time_increment\":\"all_days\"},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"account\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"campaign\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"adset_id\",\"adset_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"adset\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"adset_id\",\"adset_name\",\"ad_id\",\"ad_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"ad\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"120252850906040704\",\"level\":\"campaign\",\"time_increment\":\"all_days\"},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252793713150704\",\"fields\":[\"id\",\"name\",\"status\",\"effective_status\",\"start_time\",\"stop_time\",\"lifetime_budget\",\"adsets.limit(100){id,name,status}\",\"ads.limit(100){id,name,status,adset_id}\"]},\"executedAt\":\"2026-10-07T04:35:11Z\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252850906040704\",\"fields\":[\"id\",\"name\",\"status\",\"start_time\",\"stop_time\",\"lifetime_budget\",\"daily_budget\",\"adsets.limit(100){id,name,status,targeting,attribution_spec}\"]},\"executedAt\":\"2026-10-07T04:34:00Z\",\"timestampPrecision\":\"minute\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":[\"id\",\"name\",\"currency\",\"timezone_name\"]},\"executedAt\":\"2026-10-07T04:34:00Z\",\"timestampPrecision\":\"minute\"}"
+          }
+        ],
+        "notes": "Dados de 07/10/2026 parciais; atualização sob demanda, sem conexão automática no navegador. Os relatórios por conta, campanha e anúncio apresentaram pequenas diferenças durante a extração. Preserve cada nível consultado; não ajuste artificialmente os resultados. O total da conta inclui a campanha arquivada “rascunho 1”. O orçamento de R$ 1.500 pertence apenas à campanha ativa. Nenhuma ação de lead de site foi reportada. Ausência de ação é mantida como null, sem afirmar que houve zero leads ou que o rastreamento foi validado. Alcance é deduplicado pela Meta e não deve ser somado entre datas, campanhas, públicos ou anúncios. Anúncios sem linha de insights no período têm deliveryStatus no_delivery e métricas ausentes, sem valores inventados. Metadados dos anúncios e do conjunto da campanha arquivada foram recuperados dos insights; seu status individual não está confirmado."
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "Dados normalizados da API. Agregar somente medidas aditivas; preservar null; recalcular taxas por razão de somas; aplicar interseção de data, campanha e conjunto. Alcance exige consulta direta no mesmo escopo."
+        }
+      ]
+    },
+    "meta_adset_daily": {
+      "rows": [
+        {
+          "campaignId": "120252793713150704",
+          "adsetId": "120252799922750704",
+          "date": "2026-10-06",
+          "dateEnd": "2026-10-06",
+          "spend": 20.88,
+          "impressions": 750,
+          "reach": 621,
+          "clicks": 8,
+          "linkClicks": 5,
+          "landingPageViews": 2,
+          "leads": null,
+          "rawActions": [
+            {
+              "action_type": "link_click",
+              "value": "5"
+            },
+            {
+              "action_type": "landing_page_view",
+              "value": "2"
+            },
+            {
+              "action_type": "omni_landing_page_view",
+              "value": "2"
+            },
+            {
+              "action_type": "post_engagement",
+              "value": "6"
+            },
+            {
+              "action_type": "post_interaction_gross",
+              "value": "1"
+            },
+            {
+              "action_type": "page_engagement",
+              "value": "6"
+            },
+            {
+              "action_type": "post_interaction_net",
+              "value": "1"
+            },
+            {
+              "action_type": "post",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "campaignId": "120252850906040704",
+          "adsetId": "120252850905890704",
+          "date": "2026-10-07",
+          "dateEnd": "2026-10-07",
+          "spend": 0.01,
+          "impressions": 1,
+          "reach": 1,
+          "clicks": 0,
+          "linkClicks": 0,
+          "landingPageViews": null,
+          "leads": null,
+          "rawActions": []
+        },
+        {
+          "campaignId": "120252850906040704",
+          "adsetId": "120252850905970704",
+          "date": "2026-10-07",
+          "dateEnd": "2026-10-07",
+          "spend": 0.01,
+          "impressions": 5,
+          "reach": 4,
+          "clicks": 1,
+          "linkClicks": 1,
+          "landingPageViews": null,
+          "leads": null,
+          "rawActions": [
+            {
+              "action_type": "link_click",
+              "value": "1"
+            },
+            {
+              "action_type": "post_engagement",
+              "value": "1"
+            },
+            {
+              "action_type": "page_engagement",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "campaignId": "120252850906040704",
+          "adsetId": "120252850905990704",
+          "date": "2026-10-07",
+          "dateEnd": "2026-10-07",
+          "spend": 0.03,
+          "impressions": 4,
+          "reach": 1,
+          "clicks": 0,
+          "linkClicks": 0,
+          "landingPageViews": null,
+          "leads": null,
+          "rawActions": []
+        }
+      ],
+      "source": {
+        "provider": "Meta Ads MCP",
+        "type": "api",
+        "description": "Resultados diários por conjunto de anúncios.",
+        "grain": "conjunto × dia",
+        "currency": "BRL",
+        "timezone": "America/Sao_Paulo",
+        "executedAt": "2026-10-07T04:35:44Z",
+        "coverage": {
+          "start": "2026-10-06",
+          "end": "2026-10-07"
+        },
+        "metricDefinitions": [
+          {
+            "label": "Investimento",
+            "definition": "Valor gasto no Meta Ads, em reais, somado dentro do período e dos filtros selecionados."
+          },
+          {
+            "label": "Leads no site",
+            "definition": "Evento de lead atribuído pelo Meta. Tipos equivalentes não são somados entre si. Ação ausente preservada como não reportada."
+          },
+          {
+            "label": "Custo por lead",
+            "definition": "Investimento dividido pelos leads reportados. Indisponível quando o número de leads é ausente ou zero."
+          },
+          {
+            "label": "CTR do link",
+            "definition": "Cliques no link divididos pelas impressões; recalculado após os filtros."
+          },
+          {
+            "label": "CPC do link",
+            "definition": "Investimento dividido pelos cliques no link; recalculado após os filtros."
+          },
+          {
+            "label": "Alcance",
+            "definition": "Valor único retornado diretamente pelo Meta para o escopo consultado. Nunca somado entre dias, campanhas ou públicos."
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"account\",\"time_increment\":\"all_days\"},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"account\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"campaign\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"adset_id\",\"adset_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"adset\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"adset_id\",\"adset_name\",\"ad_id\",\"ad_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"ad\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"120252850906040704\",\"level\":\"campaign\",\"time_increment\":\"all_days\"},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252793713150704\",\"fields\":[\"id\",\"name\",\"status\",\"effective_status\",\"start_time\",\"stop_time\",\"lifetime_budget\",\"adsets.limit(100){id,name,status}\",\"ads.limit(100){id,name,status,adset_id}\"]},\"executedAt\":\"2026-10-07T04:35:11Z\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252850906040704\",\"fields\":[\"id\",\"name\",\"status\",\"start_time\",\"stop_time\",\"lifetime_budget\",\"daily_budget\",\"adsets.limit(100){id,name,status,targeting,attribution_spec}\"]},\"executedAt\":\"2026-10-07T04:34:00Z\",\"timestampPrecision\":\"minute\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":[\"id\",\"name\",\"currency\",\"timezone_name\"]},\"executedAt\":\"2026-10-07T04:34:00Z\",\"timestampPrecision\":\"minute\"}"
+          }
+        ],
+        "notes": "Dados de 07/10/2026 parciais; atualização sob demanda, sem conexão automática no navegador. Os relatórios por conta, campanha e anúncio apresentaram pequenas diferenças durante a extração. Preserve cada nível consultado; não ajuste artificialmente os resultados. O total da conta inclui a campanha arquivada “rascunho 1”. O orçamento de R$ 1.500 pertence apenas à campanha ativa. Nenhuma ação de lead de site foi reportada. Ausência de ação é mantida como null, sem afirmar que houve zero leads ou que o rastreamento foi validado. Alcance é deduplicado pela Meta e não deve ser somado entre datas, campanhas, públicos ou anúncios. Anúncios sem linha de insights no período têm deliveryStatus no_delivery e métricas ausentes, sem valores inventados. Metadados dos anúncios e do conjunto da campanha arquivada foram recuperados dos insights; seu status individual não está confirmado."
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "Dados normalizados da API. Agregar somente medidas aditivas; preservar null; recalcular taxas por razão de somas; aplicar interseção de data, campanha e conjunto. Alcance exige consulta direta no mesmo escopo."
+        }
+      ]
+    },
+    "meta_ad_daily": {
+      "rows": [
+        {
+          "campaignId": "120252793713150704",
+          "adsetId": "120252799922750704",
+          "adId": "120252839134070704",
+          "date": "2026-10-06",
+          "dateEnd": "2026-10-06",
+          "spend": 12.53,
+          "impressions": 363,
+          "reach": 312,
+          "clicks": 4,
+          "linkClicks": 2,
+          "landingPageViews": 1,
+          "leads": null,
+          "rawActions": [
+            {
+              "action_type": "link_click",
+              "value": "2"
+            },
+            {
+              "action_type": "landing_page_view",
+              "value": "1"
+            },
+            {
+              "action_type": "omni_landing_page_view",
+              "value": "1"
+            },
+            {
+              "action_type": "post_engagement",
+              "value": "3"
+            },
+            {
+              "action_type": "post_interaction_gross",
+              "value": "1"
+            },
+            {
+              "action_type": "page_engagement",
+              "value": "3"
+            },
+            {
+              "action_type": "post_interaction_net",
+              "value": "1"
+            },
+            {
+              "action_type": "post",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "campaignId": "120252793713150704",
+          "adsetId": "120252799922750704",
+          "adId": "120252839135030704",
+          "date": "2026-10-06",
+          "dateEnd": "2026-10-06",
+          "spend": 0.04,
+          "impressions": 2,
+          "reach": 2,
+          "clicks": 0,
+          "linkClicks": 0,
+          "landingPageViews": null,
+          "leads": null,
+          "rawActions": []
+        },
+        {
+          "campaignId": "120252793713150704",
+          "adsetId": "120252799922750704",
+          "adId": "120252839135900704",
+          "date": "2026-10-06",
+          "dateEnd": "2026-10-06",
+          "spend": 2.44,
+          "impressions": 151,
+          "reach": 133,
+          "clicks": 0,
+          "linkClicks": 0,
+          "landingPageViews": null,
+          "leads": null,
+          "rawActions": []
+        },
+        {
+          "campaignId": "120252793713150704",
+          "adsetId": "120252799922750704",
+          "adId": "120252839137150704",
+          "date": "2026-10-06",
+          "dateEnd": "2026-10-06",
+          "spend": 0,
+          "impressions": 1,
+          "reach": 1,
+          "clicks": 0,
+          "linkClicks": 0,
+          "landingPageViews": null,
+          "leads": null,
+          "rawActions": []
+        },
+        {
+          "campaignId": "120252793713150704",
+          "adsetId": "120252799922750704",
+          "adId": "120252839137960704",
+          "date": "2026-10-06",
+          "dateEnd": "2026-10-06",
+          "spend": 5.87,
+          "impressions": 233,
+          "reach": 216,
+          "clicks": 4,
+          "linkClicks": 3,
+          "landingPageViews": 1,
+          "leads": null,
+          "rawActions": [
+            {
+              "action_type": "link_click",
+              "value": "3"
+            },
+            {
+              "action_type": "landing_page_view",
+              "value": "1"
+            },
+            {
+              "action_type": "omni_landing_page_view",
+              "value": "1"
+            },
+            {
+              "action_type": "post_engagement",
+              "value": "3"
+            },
+            {
+              "action_type": "page_engagement",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "campaignId": "120252850906040704",
+          "adsetId": "120252850905970704",
+          "adId": "120252850905860704",
+          "date": "2026-10-07",
+          "dateEnd": "2026-10-07",
+          "spend": 0,
+          "impressions": 1,
+          "reach": 1,
+          "clicks": 0,
+          "linkClicks": 0,
+          "landingPageViews": null,
+          "leads": null,
+          "rawActions": []
+        },
+        {
+          "campaignId": "120252850906040704",
+          "adsetId": "120252850905990704",
+          "adId": "120252850905930704",
+          "date": "2026-10-07",
+          "dateEnd": "2026-10-07",
+          "spend": 0.01,
+          "impressions": 2,
+          "reach": 1,
+          "clicks": 0,
+          "linkClicks": 0,
+          "landingPageViews": null,
+          "leads": null,
+          "rawActions": []
+        },
+        {
+          "campaignId": "120252850906040704",
+          "adsetId": "120252850905890704",
+          "adId": "120252850905940704",
+          "date": "2026-10-07",
+          "dateEnd": "2026-10-07",
+          "spend": 0.01,
+          "impressions": 1,
+          "reach": 1,
+          "clicks": 0,
+          "linkClicks": 0,
+          "landingPageViews": null,
+          "leads": null,
+          "rawActions": []
+        },
+        {
+          "campaignId": "120252850906040704",
+          "adsetId": "120252850905970704",
+          "adId": "120252850905950704",
+          "date": "2026-10-07",
+          "dateEnd": "2026-10-07",
+          "spend": 0,
+          "impressions": 2,
+          "reach": 1,
+          "clicks": 1,
+          "linkClicks": 1,
+          "landingPageViews": null,
+          "leads": null,
+          "rawActions": [
+            {
+              "action_type": "link_click",
+              "value": "1"
+            },
+            {
+              "action_type": "post_engagement",
+              "value": "1"
+            },
+            {
+              "action_type": "page_engagement",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "campaignId": "120252850906040704",
+          "adsetId": "120252850905970704",
+          "adId": "120252850905960704",
+          "date": "2026-10-07",
+          "dateEnd": "2026-10-07",
+          "spend": 0.01,
+          "impressions": 2,
+          "reach": 2,
+          "clicks": 0,
+          "linkClicks": 0,
+          "landingPageViews": null,
+          "leads": null,
+          "rawActions": []
+        }
+      ],
+      "source": {
+        "provider": "Meta Ads MCP",
+        "type": "api",
+        "description": "Resultados diários por anúncio.",
+        "grain": "anúncio × dia",
+        "currency": "BRL",
+        "timezone": "America/Sao_Paulo",
+        "executedAt": "2026-10-07T04:35:44Z",
+        "coverage": {
+          "start": "2026-10-06",
+          "end": "2026-10-07"
+        },
+        "metricDefinitions": [
+          {
+            "label": "Investimento",
+            "definition": "Valor gasto no Meta Ads, em reais, somado dentro do período e dos filtros selecionados."
+          },
+          {
+            "label": "Leads no site",
+            "definition": "Evento de lead atribuído pelo Meta. Tipos equivalentes não são somados entre si. Ação ausente preservada como não reportada."
+          },
+          {
+            "label": "Custo por lead",
+            "definition": "Investimento dividido pelos leads reportados. Indisponível quando o número de leads é ausente ou zero."
+          },
+          {
+            "label": "CTR do link",
+            "definition": "Cliques no link divididos pelas impressões; recalculado após os filtros."
+          },
+          {
+            "label": "CPC do link",
+            "definition": "Investimento dividido pelos cliques no link; recalculado após os filtros."
+          },
+          {
+            "label": "Alcance",
+            "definition": "Valor único retornado diretamente pelo Meta para o escopo consultado. Nunca somado entre dias, campanhas ou públicos."
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"account\",\"time_increment\":\"all_days\"},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"account\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"campaign\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"adset_id\",\"adset_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"adset\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"adset_id\",\"adset_name\",\"ad_id\",\"ad_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"ad\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"120252850906040704\",\"level\":\"campaign\",\"time_increment\":\"all_days\"},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252793713150704\",\"fields\":[\"id\",\"name\",\"status\",\"effective_status\",\"start_time\",\"stop_time\",\"lifetime_budget\",\"adsets.limit(100){id,name,status}\",\"ads.limit(100){id,name,status,adset_id}\"]},\"executedAt\":\"2026-10-07T04:35:11Z\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252850906040704\",\"fields\":[\"id\",\"name\",\"status\",\"start_time\",\"stop_time\",\"lifetime_budget\",\"daily_budget\",\"adsets.limit(100){id,name,status,targeting,attribution_spec}\"]},\"executedAt\":\"2026-10-07T04:34:00Z\",\"timestampPrecision\":\"minute\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":[\"id\",\"name\",\"currency\",\"timezone_name\"]},\"executedAt\":\"2026-10-07T04:34:00Z\",\"timestampPrecision\":\"minute\"}"
+          }
+        ],
+        "notes": "Dados de 07/10/2026 parciais; atualização sob demanda, sem conexão automática no navegador. Os relatórios por conta, campanha e anúncio apresentaram pequenas diferenças durante a extração. Preserve cada nível consultado; não ajuste artificialmente os resultados. O total da conta inclui a campanha arquivada “rascunho 1”. O orçamento de R$ 1.500 pertence apenas à campanha ativa. Nenhuma ação de lead de site foi reportada. Ausência de ação é mantida como null, sem afirmar que houve zero leads ou que o rastreamento foi validado. Alcance é deduplicado pela Meta e não deve ser somado entre datas, campanhas, públicos ou anúncios. Anúncios sem linha de insights no período têm deliveryStatus no_delivery e métricas ausentes, sem valores inventados. Metadados dos anúncios e do conjunto da campanha arquivada foram recuperados dos insights; seu status individual não está confirmado."
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "Dados normalizados da API. Agregar somente medidas aditivas; preservar null; recalcular taxas por razão de somas; aplicar interseção de data, campanha e conjunto. Alcance exige consulta direta no mesmo escopo."
+        }
+      ]
+    },
+    "meta_campaign_total": {
+      "rows": [
+        {
+          "date": "2026-10-06",
+          "dateEnd": "2026-10-07",
+          "spend": 0.05,
+          "impressions": 10,
+          "reach": 6,
+          "clicks": 1,
+          "linkClicks": 1,
+          "landingPageViews": null,
+          "leads": null,
+          "rawActions": [
+            {
+              "action_type": "link_click",
+              "value": "1"
+            },
+            {
+              "action_type": "post_engagement",
+              "value": "1"
+            },
+            {
+              "action_type": "page_engagement",
+              "value": "1"
+            }
+          ],
+          "campaignId": "120252850906040704",
+          "budget": 1500,
+          "startTime": "2026-10-06T23:51:56-0300",
+          "endTime": "2026-11-06T22:51:56-0300"
+        }
+      ],
+      "source": {
+        "provider": "Meta Ads MCP",
+        "type": "api",
+        "description": "Orçamento e resultados acumulados da campanha atual, independentes dos filtros do painel.",
+        "grain": "campanha atual × período consultado",
+        "currency": "BRL",
+        "timezone": "America/Sao_Paulo",
+        "executedAt": "2026-10-07T04:35:44Z",
+        "coverage": {
+          "start": "2026-10-06",
+          "end": "2026-10-07"
+        },
+        "metricDefinitions": [
+          {
+            "label": "Investimento",
+            "definition": "Valor gasto no Meta Ads, em reais, somado dentro do período e dos filtros selecionados."
+          },
+          {
+            "label": "Leads no site",
+            "definition": "Evento de lead atribuído pelo Meta. Tipos equivalentes não são somados entre si. Ação ausente preservada como não reportada."
+          },
+          {
+            "label": "Custo por lead",
+            "definition": "Investimento dividido pelos leads reportados. Indisponível quando o número de leads é ausente ou zero."
+          },
+          {
+            "label": "CTR do link",
+            "definition": "Cliques no link divididos pelas impressões; recalculado após os filtros."
+          },
+          {
+            "label": "CPC do link",
+            "definition": "Investimento dividido pelos cliques no link; recalculado após os filtros."
+          },
+          {
+            "label": "Alcance",
+            "definition": "Valor único retornado diretamente pelo Meta para o escopo consultado. Nunca somado entre dias, campanhas ou públicos."
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"account\",\"time_increment\":\"all_days\"},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"account\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"campaign\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"adset_id\",\"adset_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"adset\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"campaign_id\",\"campaign_name\",\"adset_id\",\"adset_name\",\"ad_id\",\"ad_name\",\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"act_2489051944900337\",\"level\":\"ad\",\"time_increment\":1},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_INSIGHTS",
+            "detail": "{\"tool\":\"METAADS_GET_INSIGHTS\",\"arguments\":{\"fields\":[\"date_start\",\"date_stop\",\"spend\",\"impressions\",\"reach\",\"clicks\",\"inline_link_clicks\",\"actions\"],\"time_range\":{\"since\":\"2026-10-06\",\"until\":\"2026-10-07\"},\"action_attribution_windows\":[\"7d_click\",\"1d_view\"],\"limit\":101,\"object_id\":\"120252850906040704\",\"level\":\"campaign\",\"time_increment\":\"all_days\"},\"executedAt\":\"2026-10-07T04:35:44Z\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252793713150704\",\"fields\":[\"id\",\"name\",\"status\",\"effective_status\",\"start_time\",\"stop_time\",\"lifetime_budget\",\"adsets.limit(100){id,name,status}\",\"ads.limit(100){id,name,status,adset_id}\"]},\"executedAt\":\"2026-10-07T04:35:11Z\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"120252850906040704\",\"fields\":[\"id\",\"name\",\"status\",\"start_time\",\"stop_time\",\"lifetime_budget\",\"daily_budget\",\"adsets.limit(100){id,name,status,targeting,attribution_spec}\"]},\"executedAt\":\"2026-10-07T04:34:00Z\",\"timestampPrecision\":\"minute\"}"
+          },
+          {
+            "title": "METAADS_GET_OBJECT",
+            "detail": "{\"tool\":\"METAADS_GET_OBJECT\",\"arguments\":{\"object_id\":\"act_2489051944900337\",\"fields\":[\"id\",\"name\",\"currency\",\"timezone_name\"]},\"executedAt\":\"2026-10-07T04:34:00Z\",\"timestampPrecision\":\"minute\"}"
+          }
+        ],
+        "notes": "Dados de 07/10/2026 parciais; atualização sob demanda, sem conexão automática no navegador. Os relatórios por conta, campanha e anúncio apresentaram pequenas diferenças durante a extração. Preserve cada nível consultado; não ajuste artificialmente os resultados. O total da conta inclui a campanha arquivada “rascunho 1”. O orçamento de R$ 1.500 pertence apenas à campanha ativa. Nenhuma ação de lead de site foi reportada. Ausência de ação é mantida como null, sem afirmar que houve zero leads ou que o rastreamento foi validado. Alcance é deduplicado pela Meta e não deve ser somado entre datas, campanhas, públicos ou anúncios. Anúncios sem linha de insights no período têm deliveryStatus no_delivery e métricas ausentes, sem valores inventados. Metadados dos anúncios e do conjunto da campanha arquivada foram recuperados dos insights; seu status individual não está confirmado."
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "Dados normalizados da API. Agregar somente medidas aditivas; preservar null; recalcular taxas por razão de somas; aplicar interseção de data, campanha e conjunto. Alcance exige consulta direta no mesmo escopo."
+        }
+      ]
+    }
+  },
+  "id": "dashboard:c5c5723c-67ad-4dee-9064-0fb06b6d43e5",
+  "meta": {
+    "extractedAt": "2026-10-07T04:35:44Z",
+    "timezone": "America/Sao_Paulo",
+    "currency": "BRL",
+    "period": {
+      "since": "2026-10-06",
+      "until": "2026-10-07"
+    },
+    "attribution": [
+      "7d_click",
+      "1d_view"
+    ],
+    "account": {
+      "id": "act_2489051944900337",
+      "name": "Rucker Curi e Brigth"
+    },
+    "campaign": {
+      "id": "120252850906040704",
+      "name": "RC_META_LEADS_BloqueioWhatsApp_2026-10 a",
+      "status": "ACTIVE",
+      "startTime": "2026-10-06T23:51:56-0300",
+      "endTime": "2026-11-06T22:51:56-0300",
+      "budget": 1500
+    },
+    "campaigns": [
+      {
+        "id": "120252793713150704",
+        "name": "RC_META_LEADS_BloqueioWhatsApp_2026-10 rascunho 1",
+        "status": "ARCHIVED",
+        "startTime": "2026-10-02T13:22:42-0300",
+        "endTime": "2026-10-06T23:53:14-0300",
+        "budget": null
+      },
+      {
+        "id": "120252850906040704",
+        "name": "RC_META_LEADS_BloqueioWhatsApp_2026-10 a",
+        "status": "ACTIVE",
+        "startTime": "2026-10-06T23:51:56-0300",
+        "endTime": "2026-11-06T22:51:56-0300",
+        "budget": 1500
+      }
+    ],
+    "adsets": [
+      {
+        "id": "120252850905990704",
+        "name": "CJ03_PR_InteriorIndustrial_28-60_Feed",
+        "status": "ACTIVE",
+        "campaignId": "120252850906040704",
+        "regionLabel": "Interior do Paraná"
+      },
+      {
+        "id": "120252850905970704",
+        "name": "CJ02_SC_PolosIndustriais_28-60_Feed",
+        "status": "ACTIVE",
+        "campaignId": "120252850906040704",
+        "regionLabel": "Santa Catarina"
+      },
+      {
+        "id": "120252850905890704",
+        "name": "CJ01_Amplo_PolosEmpresariais_CWB_28-60_Feed",
+        "status": "ACTIVE",
+        "campaignId": "120252850906040704",
+        "regionLabel": "Curitiba e região"
+      },
+      {
+        "id": "120252799922750704",
+        "name": "CJ01_Amplo_PolosEmpresariais_CWB_28-60_Feed",
+        "status": "UNKNOWN",
+        "campaignId": "120252793713150704",
+        "regionLabel": "Curitiba e região",
+        "historical": true
+      }
+    ],
+    "ads": [
+      {
+        "id": "120252850905940704",
+        "name": "AD04_Post04_Carrossel_v2",
+        "adsetId": "120252850905890704",
+        "status": "ACTIVE",
+        "copy": "A relação entre empresas e plataformas digitais traz questões que exigem conhecimento jurídico específico.\n\nRestrições de acesso podem afetar canais importantes da operação e demandar uma análise que considere tanto os aspectos jurídicos quanto o contexto empresarial.\n\nCom atuação em Direito Digital e Contencioso Estratégico, o Rücker Curi possui experiência na análise dessas situações e de seus possíveis desdobramentos.",
+        "destination": "https://curi.adv.br/plataformas-digitais/",
+        "campaignId": "120252850906040704",
+        "concept": "AD04",
+        "deliveryStatus": "delivered"
+      },
+      {
+        "id": "120252850906010704",
+        "name": "AD02_Post02_Carrossel_v2",
+        "adsetId": "120252850905890704",
+        "status": "ACTIVE",
+        "copy": "Depois que uma conta do WhatsApp Business é bloqueada, a prioridade costuma ser recuperar o acesso.\n\nNesse processo, é importante preservar as informações relacionadas à restrição.\n\nMensagens da plataforma, notificações, protocolos, tentativas de revisão e registros dos impactos ajudam a documentar o que aconteceu.\n\nEsse histórico pode ser relevante para compreender o caso e seus possíveis desdobramentos.\n\nA experiência do Rücker Curi em questões envolvendo plataformas digitais permite considerar os aspectos jurídicos e os impactos para a atividade empresarial.",
+        "destination": "https://curi.adv.br/plataformas-digitais/",
+        "campaignId": "120252850906040704",
+        "concept": "AD02",
+        "deliveryStatus": "no_delivery"
+      },
+      {
+        "id": "120252850906000704",
+        "name": "AD01_Post01_Imagem_v2",
+        "adsetId": "120252850905890704",
+        "status": "ACTIVE",
+        "copy": "Para muitas empresas, o WhatsApp faz parte da operação comercial: vendas, atendimento, suporte e relacionamento com clientes.\n\nQuando esse canal é bloqueado, os efeitos podem atingir diferentes atividades do negócio.\n\nNesse contexto, decisões judiciais têm determinado o restabelecimento de contas corporativas em determinadas situações, especialmente diante de restrições que não foram solucionadas pela plataforma.\n\nO tema mostra que o bloqueio de uma conta empresarial pode envolver questões que vão além do funcionamento da plataforma e precisam ser avaliadas sob a perspectiva jurídica.\n\nO Rücker Curi possui experiência em questões envolvendo plataformas digitais, considerando os aspectos jurídicos e os impactos para a atividade empresarial.",
+        "destination": "https://curi.adv.br/plataformas-digitais/",
+        "campaignId": "120252850906040704",
+        "concept": "AD01",
+        "deliveryStatus": "no_delivery"
+      },
+      {
+        "id": "120252850905910704",
+        "name": "AD05_Post06_Imagem_v2",
+        "adsetId": "120252850905890704",
+        "status": "ACTIVE",
+        "copy": "O bloqueio de uma conta corporativa pode deixar de ser apenas uma dificuldade operacional quando o acesso permanece indisponível e o canal é relevante para as atividades da empresa.\n\nNessas situações, a análise jurídica considera o contexto da restrição, as circunstâncias do caso e os possíveis desdobramentos.\n\nA experiência do Rücker Curi em Direito Digital e Contencioso Estratégico inclui questões envolvendo empresas e plataformas digitais, acompanhando os impactos jurídicos dessas relações.\n\nCada situação possui características próprias e exige uma avaliação compatível com o seu contexto.",
+        "destination": "https://curi.adv.br/plataformas-digitais/",
+        "campaignId": "120252850906040704",
+        "concept": "AD05",
+        "deliveryStatus": "no_delivery"
+      },
+      {
+        "id": "120252850905900704",
+        "name": "AD03_Post03_Imagem_v2",
+        "adsetId": "120252850905890704",
+        "status": "ACTIVE",
+        "copy": "Nem todo bloqueio termina com uma resposta do suporte.\n\nQuando a empresa busca solucionar a situação diretamente com a plataforma e continua sem acesso, a questão pode assumir uma dimensão jurídica.\n\nO Poder Judiciário tem analisado casos envolvendo bloqueios de contas corporativas e, em determinadas situações, determinado o restabelecimento do acesso.\n\nA experiência do Rücker Curi nesse tema permite acompanhar de perto uma discussão que vem ganhando relevância para empresas que dependem desses canais.",
+        "destination": "https://curi.adv.br/plataformas-digitais/",
+        "campaignId": "120252850906040704",
+        "concept": "AD03",
+        "deliveryStatus": "no_delivery"
+      },
+      {
+        "id": "120252850906020704",
+        "name": "AD04_Post04_Carrossel_v2 | PR-Int",
+        "adsetId": "120252850905990704",
+        "status": "ACTIVE",
+        "copy": "A relação entre empresas e plataformas digitais traz questões que exigem conhecimento jurídico específico.\n\nRestrições de acesso podem afetar canais importantes da operação e demandar uma análise que considere tanto os aspectos jurídicos quanto o contexto empresarial.\n\nCom atuação em Direito Digital e Contencioso Estratégico, o Rücker Curi possui experiência na análise dessas situações e de seus possíveis desdobramentos.",
+        "destination": "https://curi.adv.br/plataformas-digitais/",
+        "campaignId": "120252850906040704",
+        "concept": "AD04",
+        "deliveryStatus": "no_delivery"
+      },
+      {
+        "id": "120252850905930704",
+        "name": "AD02_Post02_Carrossel_v2 | PR-Int",
+        "adsetId": "120252850905990704",
+        "status": "ACTIVE",
+        "copy": "Depois que uma conta do WhatsApp Business é bloqueada, a prioridade costuma ser recuperar o acesso.\n\nNesse processo, é importante preservar as informações relacionadas à restrição.\n\nMensagens da plataforma, notificações, protocolos, tentativas de revisão e registros dos impactos ajudam a documentar o que aconteceu.\n\nEsse histórico pode ser relevante para compreender o caso e seus possíveis desdobramentos.\n\nA experiência do Rücker Curi em questões envolvendo plataformas digitais permite considerar os aspectos jurídicos e os impactos para a atividade empresarial.",
+        "destination": "https://curi.adv.br/plataformas-digitais/",
+        "campaignId": "120252850906040704",
+        "concept": "AD02",
+        "deliveryStatus": "delivered"
+      },
+      {
+        "id": "120252850905880704",
+        "name": "AD05_Post06_Imagem_v2 | PR-Int",
+        "adsetId": "120252850905990704",
+        "status": "ACTIVE",
+        "copy": "O bloqueio de uma conta corporativa pode deixar de ser apenas uma dificuldade operacional quando o acesso permanece indisponível e o canal é relevante para as atividades da empresa.\n\nNessas situações, a análise jurídica considera o contexto da restrição, as circunstâncias do caso e os possíveis desdobramentos.\n\nA experiência do Rücker Curi em Direito Digital e Contencioso Estratégico inclui questões envolvendo empresas e plataformas digitais, acompanhando os impactos jurídicos dessas relações.\n\nCada situação possui características próprias e exige uma avaliação compatível com o seu contexto.",
+        "destination": "https://curi.adv.br/plataformas-digitais/",
+        "campaignId": "120252850906040704",
+        "concept": "AD05",
+        "deliveryStatus": "no_delivery"
+      },
+      {
+        "id": "120252850905920704",
+        "name": "AD03_Post03_Imagem_v2 | PR-Int",
+        "adsetId": "120252850905990704",
+        "status": "ACTIVE",
+        "copy": "Nem todo bloqueio termina com uma resposta do suporte.\n\nQuando a empresa busca solucionar a situação diretamente com a plataforma e continua sem acesso, a questão pode assumir uma dimensão jurídica.\n\nO Poder Judiciário tem analisado casos envolvendo bloqueios de contas corporativas e, em determinadas situações, determinado o restabelecimento do acesso.\n\nA experiência do Rücker Curi nesse tema permite acompanhar de perto uma discussão que vem ganhando relevância para empresas que dependem desses canais.",
+        "destination": "https://curi.adv.br/plataformas-digitais/",
+        "campaignId": "120252850906040704",
+        "concept": "AD03",
+        "deliveryStatus": "no_delivery"
+      },
+      {
+        "id": "120252850905870704",
+        "name": "AD01_Post01_Imagem_v2 | PR-Int",
+        "adsetId": "120252850905990704",
+        "status": "ACTIVE",
+        "copy": "Para muitas empresas, o WhatsApp faz parte da operação comercial: vendas, atendimento, suporte e relacionamento com clientes.\n\nQuando esse canal é bloqueado, os efeitos podem atingir diferentes atividades do negócio.\n\nNesse contexto, decisões judiciais têm determinado o restabelecimento de contas corporativas em determinadas situações, especialmente diante de restrições que não foram solucionadas pela plataforma.\n\nO tema mostra que o bloqueio de uma conta empresarial pode envolver questões que vão além do funcionamento da plataforma e precisam ser avaliadas sob a perspectiva jurídica.\n\nO Rücker Curi possui experiência em questões envolvendo plataformas digitais, considerando os aspectos jurídicos e os impactos para a atividade empresarial.",
+        "destination": "https://curi.adv.br/plataformas-digitais/",
+        "campaignId": "120252850906040704",
+        "concept": "AD01",
+        "deliveryStatus": "no_delivery"
+      },
+      {
+        "id": "120252850905960704",
+        "name": "AD04_Post04_Carrossel_v2 | SC",
+        "adsetId": "120252850905970704",
+        "status": "ACTIVE",
+        "copy": "A relação entre empresas e plataformas digitais traz questões que exigem conhecimento jurídico específico.\n\nRestrições de acesso podem afetar canais importantes da operação e demandar uma análise que considere tanto os aspectos jurídicos quanto o contexto empresarial.\n\nCom atuação em Direito Digital e Contencioso Estratégico, o Rücker Curi possui experiência na análise dessas situações e de seus possíveis desdobramentos.",
+        "destination": "https://curi.adv.br/plataformas-digitais/",
+        "campaignId": "120252850906040704",
+        "concept": "AD04",
+        "deliveryStatus": "delivered"
+      },
+      {
+        "id": "120252850905860704",
+        "name": "AD03_Post03_Imagem_v2 | SC",
+        "adsetId": "120252850905970704",
+        "status": "ACTIVE",
+        "copy": "Nem todo bloqueio termina com uma resposta do suporte.\n\nQuando a empresa busca solucionar a situação diretamente com a plataforma e continua sem acesso, a questão pode assumir uma dimensão jurídica.\n\nO Poder Judiciário tem analisado casos envolvendo bloqueios de contas corporativas e, em determinadas situações, determinado o restabelecimento do acesso.\n\nA experiência do Rücker Curi nesse tema permite acompanhar de perto uma discussão que vem ganhando relevância para empresas que dependem desses canais.",
+        "destination": "https://curi.adv.br/plataformas-digitais/",
+        "campaignId": "120252850906040704",
+        "concept": "AD03",
+        "deliveryStatus": "delivered"
+      },
+      {
+        "id": "120252850905950704",
+        "name": "AD01_Post01_Imagem_v2 | SC",
+        "adsetId": "120252850905970704",
+        "status": "ACTIVE",
+        "copy": "Para muitas empresas, o WhatsApp faz parte da operação comercial: vendas, atendimento, suporte e relacionamento com clientes.\n\nQuando esse canal é bloqueado, os efeitos podem atingir diferentes atividades do negócio.\n\nNesse contexto, decisões judiciais têm determinado o restabelecimento de contas corporativas em determinadas situações, especialmente diante de restrições que não foram solucionadas pela plataforma.\n\nO tema mostra que o bloqueio de uma conta empresarial pode envolver questões que vão além do funcionamento da plataforma e precisam ser avaliadas sob a perspectiva jurídica.\n\nO Rücker Curi possui experiência em questões envolvendo plataformas digitais, considerando os aspectos jurídicos e os impactos para a atividade empresarial.",
+        "destination": "https://curi.adv.br/plataformas-digitais/",
+        "campaignId": "120252850906040704",
+        "concept": "AD01",
+        "deliveryStatus": "delivered"
+      },
+      {
+        "id": "120252850905980704",
+        "name": "AD02_Post02_Carrossel_v2 | SC",
+        "adsetId": "120252850905970704",
+        "status": "PAUSED",
+        "copy": "Depois que uma conta do WhatsApp Business é bloqueada, a prioridade costuma ser recuperar o acesso.\n\nNesse processo, é importante preservar as informações relacionadas à restrição.\n\nMensagens da plataforma, notificações, protocolos, tentativas de revisão e registros dos impactos ajudam a documentar o que aconteceu.\n\nEsse histórico pode ser relevante para compreender o caso e seus possíveis desdobramentos.\n\nA experiência do Rücker Curi em questões envolvendo plataformas digitais permite considerar os aspectos jurídicos e os impactos para a atividade empresarial.",
+        "destination": "https://curi.adv.br/plataformas-digitais/",
+        "campaignId": "120252850906040704",
+        "concept": "AD02",
+        "deliveryStatus": "no_delivery"
+      },
+      {
+        "id": "120252850906030704",
+        "name": "AD05_Post06_Imagem_v2 | SC",
+        "adsetId": "120252850905970704",
+        "status": "ACTIVE",
+        "copy": "O bloqueio de uma conta corporativa pode deixar de ser apenas uma dificuldade operacional quando o acesso permanece indisponível e o canal é relevante para as atividades da empresa.\n\nNessas situações, a análise jurídica considera o contexto da restrição, as circunstâncias do caso e os possíveis desdobramentos.\n\nA experiência do Rücker Curi em Direito Digital e Contencioso Estratégico inclui questões envolvendo empresas e plataformas digitais, acompanhando os impactos jurídicos dessas relações.\n\nCada situação possui características próprias e exige uma avaliação compatível com o seu contexto.",
+        "destination": "https://curi.adv.br/plataformas-digitais/",
+        "campaignId": "120252850906040704",
+        "concept": "AD05",
+        "deliveryStatus": "no_delivery"
+      },
+      {
+        "id": "120252839134070704",
+        "name": "AD01_Post01_Imagem_v2",
+        "adsetId": "120252799922750704",
+        "campaignId": "120252793713150704",
+        "status": "UNKNOWN",
+        "concept": "AD01",
+        "destination": null,
+        "historical": true,
+        "deliveryStatus": "delivered"
+      },
+      {
+        "id": "120252839135030704",
+        "name": "AD02_Post02_Carrossel_v2",
+        "adsetId": "120252799922750704",
+        "campaignId": "120252793713150704",
+        "status": "UNKNOWN",
+        "concept": "AD02",
+        "destination": null,
+        "historical": true,
+        "deliveryStatus": "delivered"
+      },
+      {
+        "id": "120252839135900704",
+        "name": "AD03_Post03_Imagem_v2",
+        "adsetId": "120252799922750704",
+        "campaignId": "120252793713150704",
+        "status": "UNKNOWN",
+        "concept": "AD03",
+        "destination": null,
+        "historical": true,
+        "deliveryStatus": "delivered"
+      },
+      {
+        "id": "120252839137150704",
+        "name": "AD04_Post04_Carrossel_v2",
+        "adsetId": "120252799922750704",
+        "campaignId": "120252793713150704",
+        "status": "UNKNOWN",
+        "concept": "AD04",
+        "destination": null,
+        "historical": true,
+        "deliveryStatus": "delivered"
+      },
+      {
+        "id": "120252839137960704",
+        "name": "AD05_Post06_Imagem_v2",
+        "adsetId": "120252799922750704",
+        "campaignId": "120252793713150704",
+        "status": "UNKNOWN",
+        "concept": "AD05",
+        "destination": null,
+        "historical": true,
+        "deliveryStatus": "delivered"
+      }
+    ],
+    "accountTotal": {
+      "date": "2026-10-06",
+      "dateEnd": "2026-10-07",
+      "spend": 20.93,
+      "impressions": 760,
+      "reach": 625,
+      "clicks": 9,
+      "linkClicks": 6,
+      "landingPageViews": 2,
+      "leads": null,
+      "rawActions": [
+        {
+          "action_type": "link_click",
+          "value": "6"
+        },
+        {
+          "action_type": "landing_page_view",
+          "value": "2"
+        },
+        {
+          "action_type": "omni_landing_page_view",
+          "value": "2"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "7"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "1"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "7"
+        },
+        {
+          "action_type": "post_interaction_net",
+          "value": "1"
+        },
+        {
+          "action_type": "post",
+          "value": "1"
+        }
+      ]
+    },
+    "campaignTotal": {
+      "date": "2026-10-06",
+      "dateEnd": "2026-10-07",
+      "spend": 0.05,
+      "impressions": 10,
+      "reach": 6,
+      "clicks": 1,
+      "linkClicks": 1,
+      "landingPageViews": null,
+      "leads": null,
+      "rawActions": [
+        {
+          "action_type": "link_click",
+          "value": "1"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "1"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "1"
+        }
+      ],
+      "campaignId": "120252850906040704"
+    },
+    "sourceRequests": [
+      {
+        "tool": "METAADS_GET_INSIGHTS",
+        "arguments": {
+          "fields": [
+            "date_start",
+            "date_stop",
+            "spend",
+            "impressions",
+            "reach",
+            "clicks",
+            "inline_link_clicks",
+            "actions"
+          ],
+          "time_range": {
+            "since": "2026-10-06",
+            "until": "2026-10-07"
+          },
+          "action_attribution_windows": [
+            "7d_click",
+            "1d_view"
+          ],
+          "limit": 101,
+          "object_id": "act_2489051944900337",
+          "level": "account",
+          "time_increment": "all_days"
+        },
+        "executedAt": "2026-10-07T04:35:44Z"
+      },
+      {
+        "tool": "METAADS_GET_INSIGHTS",
+        "arguments": {
+          "fields": [
+            "date_start",
+            "date_stop",
+            "spend",
+            "impressions",
+            "reach",
+            "clicks",
+            "inline_link_clicks",
+            "actions"
+          ],
+          "time_range": {
+            "since": "2026-10-06",
+            "until": "2026-10-07"
+          },
+          "action_attribution_windows": [
+            "7d_click",
+            "1d_view"
+          ],
+          "limit": 101,
+          "object_id": "act_2489051944900337",
+          "level": "account",
+          "time_increment": 1
+        },
+        "executedAt": "2026-10-07T04:35:44Z"
+      },
+      {
+        "tool": "METAADS_GET_INSIGHTS",
+        "arguments": {
+          "fields": [
+            "campaign_id",
+            "campaign_name",
+            "date_start",
+            "date_stop",
+            "spend",
+            "impressions",
+            "reach",
+            "clicks",
+            "inline_link_clicks",
+            "actions"
+          ],
+          "time_range": {
+            "since": "2026-10-06",
+            "until": "2026-10-07"
+          },
+          "action_attribution_windows": [
+            "7d_click",
+            "1d_view"
+          ],
+          "limit": 101,
+          "object_id": "act_2489051944900337",
+          "level": "campaign",
+          "time_increment": 1
+        },
+        "executedAt": "2026-10-07T04:35:44Z"
+      },
+      {
+        "tool": "METAADS_GET_INSIGHTS",
+        "arguments": {
+          "fields": [
+            "campaign_id",
+            "campaign_name",
+            "adset_id",
+            "adset_name",
+            "date_start",
+            "date_stop",
+            "spend",
+            "impressions",
+            "reach",
+            "clicks",
+            "inline_link_clicks",
+            "actions"
+          ],
+          "time_range": {
+            "since": "2026-10-06",
+            "until": "2026-10-07"
+          },
+          "action_attribution_windows": [
+            "7d_click",
+            "1d_view"
+          ],
+          "limit": 101,
+          "object_id": "act_2489051944900337",
+          "level": "adset",
+          "time_increment": 1
+        },
+        "executedAt": "2026-10-07T04:35:44Z"
+      },
+      {
+        "tool": "METAADS_GET_INSIGHTS",
+        "arguments": {
+          "fields": [
+            "campaign_id",
+            "campaign_name",
+            "adset_id",
+            "adset_name",
+            "ad_id",
+            "ad_name",
+            "date_start",
+            "date_stop",
+            "spend",
+            "impressions",
+            "reach",
+            "clicks",
+            "inline_link_clicks",
+            "actions"
+          ],
+          "time_range": {
+            "since": "2026-10-06",
+            "until": "2026-10-07"
+          },
+          "action_attribution_windows": [
+            "7d_click",
+            "1d_view"
+          ],
+          "limit": 101,
+          "object_id": "act_2489051944900337",
+          "level": "ad",
+          "time_increment": 1
+        },
+        "executedAt": "2026-10-07T04:35:44Z"
+      },
+      {
+        "tool": "METAADS_GET_INSIGHTS",
+        "arguments": {
+          "fields": [
+            "date_start",
+            "date_stop",
+            "spend",
+            "impressions",
+            "reach",
+            "clicks",
+            "inline_link_clicks",
+            "actions"
+          ],
+          "time_range": {
+            "since": "2026-10-06",
+            "until": "2026-10-07"
+          },
+          "action_attribution_windows": [
+            "7d_click",
+            "1d_view"
+          ],
+          "limit": 101,
+          "object_id": "120252850906040704",
+          "level": "campaign",
+          "time_increment": "all_days"
+        },
+        "executedAt": "2026-10-07T04:35:44Z"
+      },
+      {
+        "tool": "METAADS_GET_OBJECT",
+        "arguments": {
+          "object_id": "120252793713150704",
+          "fields": [
+            "id",
+            "name",
+            "status",
+            "effective_status",
+            "start_time",
+            "stop_time",
+            "lifetime_budget",
+            "adsets.limit(100){id,name,status}",
+            "ads.limit(100){id,name,status,adset_id}"
+          ]
+        },
+        "executedAt": "2026-10-07T04:35:11Z"
+      },
+      {
+        "tool": "METAADS_GET_OBJECT",
+        "arguments": {
+          "object_id": "120252850906040704",
+          "fields": [
+            "id",
+            "name",
+            "status",
+            "start_time",
+            "stop_time",
+            "lifetime_budget",
+            "daily_budget",
+            "adsets.limit(100){id,name,status,targeting,attribution_spec}"
+          ]
+        },
+        "executedAt": "2026-10-07T04:34:00Z",
+        "timestampPrecision": "minute"
+      },
+      {
+        "tool": "METAADS_GET_OBJECT",
+        "arguments": {
+          "object_id": "act_2489051944900337",
+          "fields": [
+            "id",
+            "name",
+            "currency",
+            "timezone_name"
+          ]
+        },
+        "executedAt": "2026-10-07T04:34:00Z",
+        "timestampPrecision": "minute"
+      }
+    ],
+    "limitations": [
+      "Dados de 07/10/2026 parciais; atualização sob demanda, sem conexão automática no navegador.",
+      "Os relatórios por conta, campanha e anúncio apresentaram pequenas diferenças durante a extração. Preserve cada nível consultado; não ajuste artificialmente os resultados.",
+      "O total da conta inclui a campanha arquivada “rascunho 1”. O orçamento de R$ 1.500 pertence apenas à campanha ativa.",
+      "Nenhuma ação de lead de site foi reportada. Ausência de ação é mantida como null, sem afirmar que houve zero leads ou que o rastreamento foi validado.",
+      "Alcance é deduplicado pela Meta e não deve ser somado entre datas, campanhas, públicos ou anúncios.",
+      "Anúncios sem linha de insights no período têm deliveryStatus no_delivery e métricas ausentes, sem valores inventados.",
+      "Metadados dos anúncios e do conjunto da campanha arquivada foram recuperados dos insights; seu status individual não está confirmado."
+    ],
+    "reconciliation": {
+      "status": "minor_live_reporting_differences",
+      "dailySpend": 20.91,
+      "accountTotalSpend": 20.93,
+      "campaignDailySpend": 20.93,
+      "adsetDailySpend": 20.93,
+      "adDailySpend": 20.91,
+      "dailyImpressions": 757,
+      "accountTotalImpressions": 760,
+      "campaignDailyImpressions": 760,
+      "adsetDailyImpressions": 760,
+      "adDailyImpressions": 758,
+      "recommendedKpiSource": "daily",
+      "description": "Usar daily para investimento, impressões e cliques gerais e evolução. accountTotal.reach (625) é o alcance deduplicado do período completo. Diferentes níveis retornaram dados em atualização; não forçar igualdade."
+    }
+  }
+}

@@ -1,0 +1,15 @@
+:root {
+ color-scheme:dark;
+ --adaptive-theme:0;
+ --font-sans-default:Inter,'Segoe UI',sans-serif;
+ --font-sans:var(--font-sans-default);
+ --background:#0f1822;--surface:#17222e;--surface-raised:#1e2a37;--muted:#1b2835;--control:#192632;--control-hover:#253444;
+ --interaction-hover:var(--muted);--interaction-active:var(--control-hover);
+ --text:#f4f1ea;--secondary:#b4bbc2;--border:#ffffff14;--border-strong:#ffffff25;--accent:#c4b088;--positive:#83bd9a;--negative:#e99393;
+ --chart-1:#c4b088;--chart-2:#799fb7;--chart-3:#9dac8d;--chart-4:#c49a86;--chart-5:#aba0c3;--chart-6:#dfcfae;--chart-7:#86b3ae;--chart-8:#99a0a8;
+ --chart-neutral-fill:#ffffff08;--ranked-list-fill:#c4b08833;--ranked-list-fill-hover:#c4b08855;
+ --movement-positive:var(--positive);--movement-negative:var(--negative);--movement-total:var(--secondary);
+ --card-radius:12px;--data-card-radius:14px;--data-card-background:#17222e;--control-radius:10px;--mark-radius:5;
+ --card-shadow:0 8px 24px #00000012;--shadow:0 8px 30px #00000044;
+ --dashboard-background:#0f1822;--data-app-chrome-background:#0f1822;--data-app-chrome-text:#f4f1ea;
+}

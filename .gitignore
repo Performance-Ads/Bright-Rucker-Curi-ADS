@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.data-app-offline/
+.openai/
+.env
+.env.*
+*.log
+src/content/assets/fonts-source.css
+
+.npm-cache/
